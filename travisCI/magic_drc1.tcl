@@ -12,10 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-set ::env(test_dir) /magic_root/testcases/designs/$::env(DESIGN)/test
-source $::env(test_dir)/config.tcl
-
 lef read $::env(TECH_LEF)
 #load $::env(magic_result_file_tag).mag
 if {  [info exist ::env(EXTRA_LEFS)] } {
