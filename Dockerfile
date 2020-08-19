@@ -40,3 +40,5 @@ RUN mkdir -p /build/version/
 RUN date +"Build Timestamp: %Y-%m-%d_%H-%M-%S" > /build/version/magic.version
 #RUN git rev-parse HEAD >> /build/version/magic.version
 RUN tar -czf /build.tar.gz /build
+
+WORKDIR /magic_root
