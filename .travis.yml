@@ -14,38 +14,28 @@
 
 language: minimal
 
-branches:
-  only:
-    - /^(?i:develop)-latest_.*$/
-
-git:
-  submodules: false
-
 services:
     - docker
 
 os: 
   - linux
 
+env: STD_CELL_LIBRARY=sky130_fd_sc_hd
+
 jobs:
   include:
     - name: "spm Test"
-      env: DESIGN=spm TOOL=magic REPO=magic BRANCH=master
+      env: DESIGN=spm 
     - name: "usb Test"
-      env: DESIGN=usb TOOL=magic REPO=magic BRANCH=master
+      env: DESIGN=usb 
     - name: "usb_cdc_core Test"
-      env: DESIGN=usb_cdc_core TOOL=magic REPO=magic BRANCH=master
+      env: DESIGN=usb_cdc_core 
     - name: "xtea Test"
-      env: DESIGN=xtea TOOL=magic REPO=magic BRANCH=master
+      env: DESIGN=xtea 
     
 before_install:
-  - sh ./travisCI/travisPrebuild.sh
+  - sh build-docker.sh
   
 install:
-  - sh travisCI/travisBuild.sh;
+  - sh travisCI/travisBuild.sh
     
-script:
-  - bash travisCI/gdsStreaming.sh
-  - bash travisCI/drcChecks.sh
-  - bash travisCI/antennaChecks.sh
-
