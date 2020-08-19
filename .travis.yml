@@ -1,0 +1,51 @@
+# Copyright 2020 Efabless Corporation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+language: minimal
+
+branches:
+  only:
+    - /^(?i:develop)-latest_.*$/
+
+git:
+  submodules: false
+
+services:
+    - docker
+
+os: 
+  - linux
+
+jobs:
+  include:
+    - name: "spm Test"
+      env: DESIGN=spm TOOL=magic REPO=magic BRANCH=master
+    - name: "usb Test"
+      env: DESIGN=usb TOOL=magic REPO=magic BRANCH=master
+    - name: "usb_cdc_core Test"
+      env: DESIGN=usb_cdc_core TOOL=magic REPO=magic BRANCH=master
+    - name: "xtea Test"
+      env: DESIGN=xtea TOOL=magic REPO=magic BRANCH=master
+    
+before_install:
+  - sh ./travisCI/travisPrebuild.sh
+  
+install:
+  - sh travisCI/travisBuild.sh;
+    
+script:
+  - bash travisCI/gdsStreaming.sh
+  - bash travisCI/drcChecks.sh
+  - bash travisCI/antennaChecks.sh
+
