@@ -1,3 +1,4 @@
+export STD_CELL_LIBRARY=sky130_fd_sc_hd
 cd  $PDK_ROOT
 rm -rf skywater-pdk
 git clone https://github.com/google/skywater-pdk.git skywater-pdk
