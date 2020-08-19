@@ -16,7 +16,7 @@ export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) magic:latest  bash -c "./travisCI/build-pdk.sh"
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) magic:latest  bash -c "./travisCI/buildPDK.sh"
 echo "done installing"
 cd $RUN_ROOT
 exit 0

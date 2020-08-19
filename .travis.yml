@@ -39,3 +39,5 @@ before_install:
 install:
   - sh travisCI/travisBuild.sh
     
+script:
+  - bash travisCI/drcChecks.sh
