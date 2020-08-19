@@ -5,11 +5,13 @@ set ::env(PDKPATH) "$::env(PDK_ROOT)/$::env(PDK)"
 # the following MAGTYPE has to be maglef for the purpose of DRC checking
 set ::env(MAGTYPE) maglef
 
-puts_info "Running Magic DRC..."
+set ::env(test_dir) /magic_root/testcases/designs/$::env(DESIGN)/test
+source $::env(test_dir)/config.tcl
+
+puts "Running Magic DRC..."
 magic \
     -noconsole \
     -dnull \
     -rcfile $::env(MAGIC_MAGICRC) \
     /magic_root/travisCI/magic_drc.tcl \
-    </dev/null \
-    |& tee $::env(TERMINAL_OUTPUT) $::env(test_dir)/magic.drc.log
+    </dev/null 
