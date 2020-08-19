@@ -1,4 +1,15 @@
-package require openlane
-prep -design $::env(DESIGN) -tag config_magic_test 
+set ::env(PDK) "sky130A"
+set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
-run_magic_drc
+set ::env(PDKPATH) "$::env(PDK_ROOT)/$::env(PDK)"
+# the following MAGTYPE has to be maglef for the purpose of DRC checking
+set ::env(MAGTYPE) maglef
+
+puts_info "Running Magic DRC..."
+magic \
+    -noconsole \
+    -dnull \
+    -rcfile $::env(MAGIC_MAGICRC) \
+    /magic_root/travisCI/magic_drc.tcl \
+    </dev/null \
+    |& tee $::env(TERMINAL_OUTPUT) $::env(test_dir)/magic.drc.log
