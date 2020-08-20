@@ -17,12 +17,10 @@ export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
-docker run -it -v $RUN_ROOT:/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) openlane:rc3  bash -c "./flow.tcl -interactive -file /openLANE_flow//travisCI/gdsStreaming.tcl"
-
-TEST=$RUN_ROOT/designs/$DESIGN/runs/config_magic_test/results/magic/$DESIGN.gds
-BENCHMARK=$RUN_ROOT/designs/$DESIGN/runs/magic_benchmark/results/magic/$DESIGN.gds
+docker run -it -v $RUN_ROOT:/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) openlane:rc3  bash -c "tclsh ./travisCI/gdsStreaming.tcl"
+test_dir=$RUN_ROOT/testcases/designs/$DESIGN/test/
+TEST=$test_dir/gds/$DESIGN.gds
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then exit -1; fi
-diff -s $TEST $BENCHMARK
-
+echo "GDS successfully streamed."
 exit 0

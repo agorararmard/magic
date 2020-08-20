@@ -30,4 +30,5 @@ install:
   - sh travisCI/travisBuild.sh
     
 script:
+  - bash travisCI/gdsStreaming.sh
   - bash travisCI/drcChecks.sh
