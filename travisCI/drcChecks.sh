@@ -23,8 +23,6 @@ TEST=$RUN_ROOT/testcases/designs/$DESIGN/test/drc1/magic.drc
 BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/benchmark/reports/magic.drc
 
 
-TEST_LOG=$RUN_ROOT/testcases/designs/$DESIGN/test/drc1/magic_drc.log
-cat $TEST_LOG
 
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "DRC Check FAILED"; exit -1; fi

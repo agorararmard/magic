@@ -20,9 +20,6 @@ docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_
 test_dir=$RUN_ROOT/testcases/designs/$DESIGN/test/
 TEST=$test_dir/gds/$DESIGN.gds
 
-TEST_LOG=$RUN_ROOT/testcases/designs/$DESIGN/test/gds/magic.log
-cat $TEST_LOG
-
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "GDS streaming failed."; exit -1; fi
 echo "GDS successfully streamed."
