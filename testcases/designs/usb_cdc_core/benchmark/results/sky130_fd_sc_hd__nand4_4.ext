@@ -1,0 +1,100 @@
+timestamp 1597414872
+version 8.3
+tech sky130A
+style ngspice(lvs)
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+abstract
+port "VGND" 6 0 -48 1564 48 m1
+port "VPWR" 7 0 496 1564 592 m1
+port "VGND" 6 0 -17 1564 17 li
+port "VGND" 6 103 17 169 97 li
+port "VGND" 6 271 17 337 97 li
+port "A" 1 1293 215 1542 255 li
+port "B" 2 770 215 1113 255 li
+port "C" 3 398 215 708 255 li
+port "D" 4 21 215 340 255 li
+port "Y" 5 103 289 1461 333 li
+port "Y" 5 103 333 169 493 li
+port "Y" 5 271 333 337 493 li
+port "Y" 5 439 333 505 493 li
+port "Y" 5 607 333 673 493 li
+port "Y" 5 879 333 945 493 li
+port "Y" 5 1047 333 1113 493 li
+port "Y" 5 1222 131 1461 181 li
+port "Y" 5 1222 181 1258 289 li
+port "Y" 5 1227 333 1293 493 li
+port "Y" 5 1395 333 1461 493 li
+port "VPWR" 7 0 527 1564 561 li
+port "VPWR" 7 18 289 69 527 li
+port "VPWR" 7 203 367 237 527 li
+port "VPWR" 7 371 367 405 527 li
+port "VPWR" 7 539 367 573 527 li
+port "VPWR" 7 707 367 845 527 li
+port "VPWR" 7 979 367 1013 527 li
+port "VPWR" 7 1154 367 1188 527 li
+port "VPWR" 7 1327 367 1361 527 li
+port "VPWR" 7 1495 289 1547 527 li
+node "VGND" 2 713.909 0 -48 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 150144 3320 0 0 0 0 0 0 0 0 0 0
+node "VPWR" 2 643.437 0 496 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 150144 3320 0 0 0 0 0 0 0 0 0 0
+node "li_795_51#" 0 0 795 51 obsli 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VGND" 567 1025.86 271 17 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63736 3516 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+node "li_439_131#" 0 0 439 131 obsli 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_18_51#" 0 0 18 51 obsli 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 76 168.163 1293 215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9960 578 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 105 223.341 770 215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13720 766 0 0 0 0 0 0 0 0 0 0 0 0
+node "C" 95 203.97 398 215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12400 700 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 97 209.253 21 215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12760 718 0 0 0 0 0 0 0 0 0 0 0 0
+node "Y" 681 1821.71 1395 333 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 160070 6086 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+node "VPWR" 915 1879.18 1495 289 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132410 6388 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Y" "D" 230.029
+cap "B" "VPWR" 60.5058
+cap "Y" "C" 300.882
+cap "A" "VPWR" 76.0179
+cap "D" "C" 22.7586
+cap "Y" "B" 345.022
+cap "Y" "A" 363.832
+cap "C" "B" 21.2903
+cap "VGND" "VPWR" 44.742
+cap "VGND" "VGND" 748.154
+cap "VPWR" "VPWR" 889.317
+cap "B" "A" 7.33333
+cap "Y" "VGND" 236.247
+cap "D" "VGND" 68.0819
+cap "Y" "VPWR" 3397.39
+cap "C" "VGND" 51.6667
+cap "D" "VPWR" 85.3598
+cap "B" "VGND" 57.1667
+cap "C" "VPWR" 44.8897
+cap "A" "VGND" 41.5
+subcap "VGND" -93.5292
+subcap "VPWR" -81.8214
+subcap "VGND" -104.708
+subcap "A" -94.354
+subcap "Y" -151.282
+subcap "VPWR" -267.97
+subcap "A" -73.809
+subcap "Y" -1742.93
+subcap "VPWR" -1726.55

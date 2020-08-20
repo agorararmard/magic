@@ -24,7 +24,13 @@ jobs:
   include:
     - name: "spm Test"
       env: DESIGN=spm 
-
+    - name: "usb Test"
+      env: DESIGN=usb
+    - name: "usb_cdc_core Test"
+      env: DESIGN=usb_cdc_core
+    - name: "xtea Test"
+      env: DESIGN=xtea       
+      
 install:
   - sh build-docker.sh
   - sh travisCI/travisBuild.sh
