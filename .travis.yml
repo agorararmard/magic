@@ -20,8 +20,6 @@ services:
 os: 
   - linux
 
-env: STD_CELL_LIBRARY=sky130_fd_sc_hd
-
 jobs:
   include:
     - name: "spm Test"
@@ -32,11 +30,9 @@ jobs:
       env: DESIGN=usb_cdc_core 
     - name: "xtea Test"
       env: DESIGN=xtea 
-    
-before_install:
-  - sh build-docker.sh
-  
+
 install:
+  - sh build-docker.sh
   - sh travisCI/travisBuild.sh
     
 script:

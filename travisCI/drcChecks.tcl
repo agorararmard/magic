@@ -1,3 +1,5 @@
+#!/usr/bin/tclsh
+
 set ::env(PDK) "sky130A"
 set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
@@ -13,5 +15,5 @@ magic \
     -noconsole \
     -dnull \
     -rcfile $::env(MAGIC_MAGICRC) \
-    /magic_root/travisCI/magic_drc.tcl \
+    /magic_root/travisCI/magic_drc1.tcl \
     </dev/null 
