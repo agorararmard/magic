@@ -17,7 +17,7 @@ export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh < ./travisCI/drcChecks.tcl"
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/drcChecks.tcl"
 
 TEST=$RUN_ROOT/testcases/designs/$DESIGN/test/magic.drc
 crashSignal=$(find $TEST)

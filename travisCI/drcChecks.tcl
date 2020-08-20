@@ -11,7 +11,7 @@ set ::env(test_dir) /magic_root/testcases/designs/$::env(DESIGN)/test
 source $::env(test_dir)/config.tcl
 
 puts "Running Magic DRC..."
-magic \
+exec magic \
     -noconsole \
     -dnull \
     -rcfile $::env(MAGIC_MAGICRC) \
