@@ -39,12 +39,12 @@ Benchmark_Magic_violations=$(grep "^ [0-9]" $BENCHMARK | wc -l)
 if ! [[ $Benchmark_Magic_violations ]]; then Benchmark_Magic_violations=-1; fi
 if [ $Benchmark_Magic_violations -ne -1 ]; then Benchmark_Magic_violations=$(((Benchmark_Magic_violations+3)/4)); fi
 
-if [ $Benchmark_Magic_violations -ne $Test_Magic_violations ]; then exit -1; fi
-
 echo "Test # of DRC Violations:"
 echo $Test_Magic_violations
 
 echo "Benchmark # of DRC Violations:"
 echo $Benchmark_Magic_violations
+
+if [ $Benchmark_Magic_violations -ne $Test_Magic_violations ]; then exit -1; fi
 
 exit 0
