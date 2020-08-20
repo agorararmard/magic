@@ -22,7 +22,7 @@ if {  [info exist ::env(EXTRA_LEFS)] } {
 }
 def read $::env(CURRENT_DEF)
 
-set fout [open $::env(test_dir)/magic.drc w]
+set fout [open $::env(test_dir)/drc1/magic.drc w]
 set oscale [cif scale out]
 set cell_name $::env(DESIGN_NAME)
 magic::suspendall
@@ -67,7 +67,7 @@ flush stdout
 
 puts stdout "\[INFO\]: Saving mag view with DRC errors($::env(test_dir)/magic.drc.mag)"
 # WARNING: changes the name of the cell; keep as last step
-save $::env(test_dir)/magic.drc.mag
+save $::env(test_dir)/drc1/magic.drc.mag
 puts stdout "\[INFO\]: Saved"
 
 exit 0

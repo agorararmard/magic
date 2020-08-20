@@ -1,0 +1,3058 @@
+* NGSPICE file created from spm.ext - technology: sky130A
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__diode_2 abstract view
+.subckt sky130_fd_sc_hd__diode_2 DIODE VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_4 abstract view
+.subckt sky130_fd_sc_hd__decap_4 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_2 abstract view
+.subckt sky130_fd_sc_hd__fill_2 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__and2_4 abstract view
+.subckt sky130_fd_sc_hd__and2_4 A B X VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_3 abstract view
+.subckt sky130_fd_sc_hd__decap_3 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__buf_1 abstract view
+.subckt sky130_fd_sc_hd__buf_1 A X VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_12 abstract view
+.subckt sky130_fd_sc_hd__decap_12 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_1 abstract view
+.subckt sky130_fd_sc_hd__fill_1 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_6 abstract view
+.subckt sky130_fd_sc_hd__decap_6 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_8 abstract view
+.subckt sky130_fd_sc_hd__decap_8 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_1 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_1 A X VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__dfrtp_4 abstract view
+.subckt sky130_fd_sc_hd__dfrtp_4 D Q RESET_B CLK VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__inv_8 abstract view
+.subckt sky130_fd_sc_hd__inv_8 A Y VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__xor2_4 abstract view
+.subckt sky130_fd_sc_hd__xor2_4 A B X VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__tapvpwrvgnd_1 abstract view
+.subckt sky130_fd_sc_hd__tapvpwrvgnd_1 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__a2bb2o_4 abstract view
+.subckt sky130_fd_sc_hd__a2bb2o_4 A1_N A2_N B1 B2 X VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__o22a_4 abstract view
+.subckt sky130_fd_sc_hd__o22a_4 A1 A2 B1 B2 X VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_16 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_16 A X VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__a21boi_4 abstract view
+.subckt sky130_fd_sc_hd__a21boi_4 A1 A2 B1_N Y VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__or2_4 abstract view
+.subckt sky130_fd_sc_hd__or2_4 A B X VGND VPWR
+.ends
+
+.subckt spm clk p rst x[0] x[10] x[11] x[12] x[13] x[14] x[15] x[16] x[17] x[18] x[19]
++ x[1] x[20] x[21] x[22] x[23] x[24] x[25] x[26] x[27] x[28] x[29] x[2] x[30] x[31]
++ x[3] x[4] x[5] x[6] x[7] x[8] x[9] y VPWR VGND
+XANTENNA__666__D _666_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_122 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__510__A1 _506_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__510__B2 _507_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_501_ _508_/A x[8] _501_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_26_63 VGND VPWR sky130_fd_sc_hd__decap_3
+X_432_ _430_/A _432_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_115 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_9_148 VGND VPWR sky130_fd_sc_hd__fill_2
+X_363_ _363_/A _363_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_13_177 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__568__A1 _564_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__568__B2 _565_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__670__RESET_B _401_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_27_236 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_129 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_125 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_10_158 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__612__A2_N _608_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_87 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_37_62 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_37_51 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__627__A2_N _622_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_203 VGND VPWR sky130_fd_sc_hd__decap_6
+X_415_ _414_/A _415_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_346_ _624_/A x[29] _347_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__656__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_5_151 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_5_184 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_23_42 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_31 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__679__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_2_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__468__B1 _466_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__640__B1 _697_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__504__A2_N _500_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_9_33 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_9_44 VGND VPWR sky130_fd_sc_hd__fill_2
+Xclkbuf_3_1_0_clk clkbuf_2_0_0_clk/X _669_/CLK VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__519__A2_N _514_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__674__D _556_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_242 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__702__RESET_B _361_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_680_ _680_/D _565_/A _389_/X _697_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_18_20 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_18_64 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_18_86 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_74 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_242 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__490__A2_N _486_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_224 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_235 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_38_128 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__402__A _398_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__669__D _540_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_172 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__604__B1 _687_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_29_128 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__598__A1_N _593_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__583__A1_N _578_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_21 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_32 VGND VPWR sky130_fd_sc_hd__fill_2
+X_594_ _688_/Q _594_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_663_ _663_/D _663_/Q _411_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_6_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_78 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__695__RESET_B _370_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_161 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_186 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_34_131 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__335__A2_N _637_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_25_131 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_10 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_123 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_25_197 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_15_43 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_54 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_87 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__475__A1_N _470_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_31_156 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_134 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_31_123 VGND VPWR sky130_fd_sc_hd__fill_2
+X_646_ _455_/X _646_/Q _431_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_577_ _574_/X _577_/B _680_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XPHY_170 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_192 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_181 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_39_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__682__D _682_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__510__A2 _507_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_500_ _500_/A _500_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__500__A _500_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_97 VGND VPWR sky130_fd_sc_hd__fill_1
+X_431_ _430_/A _431_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_362_ _363_/A _362_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_13_112 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_123 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_134 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_145 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_156 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_63 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__410__A _416_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_204 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__568__A2 _565_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_629_ _629_/A _629_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_27_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__677__D _569_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_42_218 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_108 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_12_11 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_12_44 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_37_96 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_74 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_215 VGND VPWR sky130_fd_sc_hd__decap_3
+X_414_ _414_/A _414_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_345_ _704_/Q _345_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_5_174 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__405__A _406_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_240 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_87 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_2_199 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__468__B2 _467_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_36 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__640__A1 _636_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__640__B2 _637_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__649__RESET_B _427_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__690__D _613_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__646__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_98 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_7 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_29_107 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__604__A1 _600_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__604__B2 _601_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__685__D _598_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__669__CLK _669_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__540__B1 _541_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_662_ _512_/X _500_/A _412_/X _673_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_29_75 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_53 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_29_42 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_29_31 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_140 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_28_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_151 VGND VPWR sky130_fd_sc_hd__fill_2
+X_593_ _685_/Q _593_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+Xclkbuf_3_0_0_clk clkbuf_2_0_0_clk/X _663_/CLK VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__413__A _414_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__598__B1 _596_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__664__RESET_B _409_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_173 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_209 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_25_176 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_54 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_43 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_231 VGND VPWR sky130_fd_sc_hd__fill_2
+X_645_ _645_/D _645_/Q _432_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_16_121 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_102 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_193 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_182 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__408__A _406_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_576_ _571_/Y _572_/Y _574_/X _577_/B _679_/D VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_16_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_160 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_171 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__504__B1 _502_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_224 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_190 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_22_168 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_22_135 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_26_32 VGND VPWR sky130_fd_sc_hd__fill_2
+X_361_ _363_/A _361_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_430_ _430_/A _430_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_42_75 VGND VPWR sky130_fd_sc_hd__decap_12
+X_628_ _625_/X _628_/B _628_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+X_559_ _559_/A x[16] _559_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__601__A _601_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__349__A2_N _345_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__693__D _627_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_31 VGND VPWR sky130_fd_sc_hd__fill_2
+X_413_ _414_/A _413_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_18_238 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_41_241 VGND VPWR sky130_fd_sc_hd__decap_3
+X_344_ _701_/Q _344_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__421__A _420_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_5_197 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_24_219 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__688__D _606_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__506__A _661_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_55 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_145 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_134 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_167 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_15 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__689__RESET_B _378_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_48 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__640__A2 _637_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__416__A _416_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_11 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_34_43 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_32 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_34_21 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_87 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_37_163 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_141 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__604__A2 _601_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_80 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_20_78 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__540__B2 _539_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_661_ _511_/X _661_/Q _413_/X _673_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_28_174 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_28_163 VGND VPWR sky130_fd_sc_hd__decap_4
+X_592_ _592_/A _590_/X _592_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_6_58 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__598__B2 _597_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__696__D _696_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_158 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_103 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_155 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_31_77 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_66 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_31_22 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__514__A _514_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_644_ _448_/Y _644_/Q _433_/X _697_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_575_ _571_/Y _572_/Y _679_/Q _572_/A _577_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+XANTENNA__659__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_31_169 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_194 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_183 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__424__A _423_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_150 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_161 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_172 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__504__B2 _505_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_236 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_22_158 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__509__A _508_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_42_87 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_42_54 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_32 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_26_88 VGND VPWR sky130_fd_sc_hd__decap_4
+X_360_ _372_/A _363_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_13_169 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_3_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_26 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_15 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_36_239 VGND VPWR sky130_fd_sc_hd__decap_12
+X_558_ _558_/A _558_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_627_ _621_/Y _622_/Y _625_/X _628_/B _627_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XANTENNA__419__A _420_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_489_ _485_/Y _486_/Y _655_/Q _486_/A _489_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_8_173 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__489__B1 _655_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_42_209 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_27_206 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_12_24 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_12_79 VGND VPWR sky130_fd_sc_hd__decap_8
+X_412_ _414_/A _412_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_343_ _340_/X _341_/X _700_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_38_7 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_5_165 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_209 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_32_220 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__634__B1 _635_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_34 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__522__A _668_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__658__RESET_B _417_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__432__A _430_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_29_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__607__A _607_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__699__D _342_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_223 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__517__A _517_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__692__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_249 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_234 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__427__A _423_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_120 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_92 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__337__A _699_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_13 VGND VPWR sky130_fd_sc_hd__fill_2
+X_660_ _505_/X _660_/Q _414_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_29_99 VGND VPWR sky130_fd_sc_hd__fill_2
+X_591_ _585_/Y _586_/Y _592_/A _590_/X _591_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_3_241 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_6_48 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_120 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_145 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__673__RESET_B _398_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__620__A _617_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_25_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_148 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_189 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_12 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__530__A _544_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_244 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_222 VGND VPWR sky130_fd_sc_hd__decap_6
+X_574_ _574_/A _574_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_643_ _447_/X _643_/Q _434_/X _697_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_31_148 VGND VPWR sky130_fd_sc_hd__decap_6
+XPHY_195 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_184 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_140 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_151 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_162 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_173 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__440__A _446_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__615__A _615_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_148 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_22_126 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_80 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__350__A _350_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_12 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_26_23 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_42_44 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_21_181 VGND VPWR sky130_fd_sc_hd__fill_2
+X_557_ _557_/A _557_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_488_ _487_/X _488_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_626_ _621_/Y _622_/Y _693_/Q _622_/A _628_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+XANTENNA__435__A _366_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__489__B2 _486_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__489__A1 _485_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__345__A _704_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_66 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_37_55 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__649__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_251 VGND VPWR sky130_fd_sc_hd__fill_2
+X_342_ _337_/Y _338_/Y _340_/X _341_/X _342_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_411_ _414_/A _411_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_609_ _609_/A x[23] _610_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__634__B2 _635_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_210 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_13 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_103 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_37 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_48 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_9_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_232 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__561__B1 _557_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__698__RESET_B _367_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__623__A y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_202 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__533__A1_N _528_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_41_3 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_6_250 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_37_176 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__525__B1 _665_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__353__A _446_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_25 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_67 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__528__A _667_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_590_ _585_/Y _586_/Y _683_/Q _686_/Q _590_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_6_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_165 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__438__A _646_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__642__RESET_B _435_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA_clkbuf_0_clk_A clk VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__620__B _620_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__682__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_47 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_15_58 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__530__B x[12] VGND VPWR sky130_fd_sc_hd__diode_2
+X_642_ _642_/D p _435_/X _669_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_31_116 VGND VPWR sky130_fd_sc_hd__fill_1
+X_573_ _559_/A x[18] _574_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XPHY_130 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_141 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_152 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_196 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_185 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_163 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_174 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__631__A _624_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__350__B _348_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_68 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_116 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_149 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_42_67 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__541__A _541_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_219 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_208 VGND VPWR sky130_fd_sc_hd__fill_2
+X_625_ _625_/A _625_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_487_ _508_/A x[6] _487_/X VGND VPWR sky130_fd_sc_hd__and2_4
+X_556_ _556_/A _554_/X _556_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_16_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__489__A2 _486_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_8_197 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__451__A _472_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_35_241 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_27_219 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_12_15 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_12_37 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__361__A _363_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_78 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA_clkbuf_3_6_0_clk_A clkbuf_3_6_0_clk/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_41_233 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__536__A _672_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_410_ _416_/A _414_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_341_ _337_/Y _338_/Y _699_/Q _338_/A _341_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_5_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_178 VGND VPWR sky130_fd_sc_hd__decap_4
+X_608_ _692_/Q _608_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__446__A _446_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_539_ _535_/Y _536_/Y _669_/Q _672_/Q _539_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_4_93 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_47 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_159 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_29 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__561__A1 _557_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__561__B2 _558_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__667__RESET_B _406_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__562__A2_N _558_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_34_13 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_36 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_18_69 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_34_79 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_68 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_3 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA_clkbuf_2_3_0_clk_A clkbuf_2_3_0_clk/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_37_199 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_188 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_50 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__525__B2 _668_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__525__A1 _521_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__353__B x[30] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_37 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_79 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_46 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_28_111 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__461__B1 _459_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__544__A _544_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__454__A2_N _450_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_10_70 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_9 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_90 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_177 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__682__RESET_B _387_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_25_114 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__443__B1 _641_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_26 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__629__A _629_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_128 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_33_191 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_58 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__547__A1_N _542_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__364__A _363_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_641_ _444_/X _641_/Q _436_/X _669_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_572_ _572_/A _572_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_31_106 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_120 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_131 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_142 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_153 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_16_125 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_147 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_164 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_175 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_197 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_186 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_39_228 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__449__A _645_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_0 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA_clkbuf_1_0_0_clk_A clkbuf_0_clk/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_194 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_139 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__631__B x[26] VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__359__A rst VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA_clkbuf_3_2_0_clk_A clkbuf_3_3_0_clk/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_36 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__541__B _539_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_150 VGND VPWR sky130_fd_sc_hd__fill_2
+X_555_ _549_/Y _550_/Y _556_/A _554_/X _555_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_624_ _624_/A x[25] _625_/A VGND VPWR sky130_fd_sc_hd__and2_4
+X_486_ _486_/A _486_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_8_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_12_194 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__672__CLK _673_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_8_165 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__451__B x[1] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_209 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_41_245 VGND VPWR sky130_fd_sc_hd__decap_8
+X_340_ _339_/X _340_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__552__A _559_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__702__D _702_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__695__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_607_ _607_/A _607_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_32_245 VGND VPWR sky130_fd_sc_hd__decap_8
+X_538_ _537_/X _541_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__446__B x[31] VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__462__A _459_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_469_ _466_/X _467_/X _469_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XANTENNA__619__B1 _617_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_72 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__637__A _637_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_245 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__372__A _372_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_223 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__561__A2 _558_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_171 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__457__A _650_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_215 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_34_25 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__367__A _371_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_37_167 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_37_134 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_37_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_101 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__525__A2 _522_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_49 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__461__B2 _460_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_167 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__560__A _559_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__544__B x[14] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_233 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_222 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_93 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_134 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__470__A _470_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__651__RESET_B _425_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__443__B2 _646_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__443__A1 _437_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__576__A2_N _572_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_26 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__380__A _381_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_203 VGND VPWR sky130_fd_sc_hd__decap_12
+X_571_ _679_/Q _571_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_16_137 VGND VPWR sky130_fd_sc_hd__fill_2
+X_640_ _636_/Y _637_/Y _697_/Q _637_/A _336_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+XPHY_198 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_24_170 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_187 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_110 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_121 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_132 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_143 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_154 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_165 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_176 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_21_81 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__465__A _472_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_129 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_1 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_38_240 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_42_58 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__375__A _378_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__468__A2_N _464_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_184 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_3_19 VGND VPWR sky130_fd_sc_hd__fill_1
+X_554_ _549_/Y _550_/Y _673_/Q _550_/A _554_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+X_485_ _655_/Q _485_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+Xclkbuf_2_3_0_clk clkbuf_2_3_0_clk/A clkbuf_3_6_0_clk/A VGND VPWR sky130_fd_sc_hd__clkbuf_1
+X_623_ y _624_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__591__B1 _592_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__582__B1 _681_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_28 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_213 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_47 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_243 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__552__B x[15] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_5_114 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_147 VGND VPWR sky130_fd_sc_hd__fill_2
+X_606_ _606_/A _604_/X _606_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_32_213 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_32_202 VGND VPWR sky130_fd_sc_hd__fill_1
+X_468_ _463_/Y _464_/Y _466_/X _467_/X _468_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_537_ _544_/A x[13] _537_/X VGND VPWR sky130_fd_sc_hd__and2_4
+X_399_ _398_/A _399_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__462__B _460_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__619__B2 _620_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_191 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_4_84 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__555__B1 _556_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_38 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__662__CLK _673_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_202 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_213 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__563__A _563_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__546__B1 _542_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_38_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__676__RESET_B _394_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__473__A _473_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_16 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__685__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__383__A _381_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_227 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_238 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__558__A _558_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__519__B1 _520_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_113 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_96 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_17 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__378__A _378_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_29_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__700__CLK _697_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_10_61 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_34_149 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_34_105 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_25_105 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__443__A2 _438_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__691__RESET_B _376_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_25_127 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_215 VGND VPWR sky130_fd_sc_hd__fill_2
+X_570_ _570_/A _568_/X _678_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XPHY_100 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_31_119 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_199 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_188 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_111 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_122 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_133 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_144 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__571__A _679_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_155 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_166 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_177 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_21_71 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__465__B x[3] VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_2 VGND VPWR sky130_fd_sc_hd__decap_3
+X_699_ _342_/X _699_/Q _364_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_15_182 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_15_193 VGND VPWR sky130_fd_sc_hd__fill_2
+Xclkbuf_0_clk clk clkbuf_0_clk/X VGND VPWR sky130_fd_sc_hd__clkbuf_16
+XFILLER_30_163 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_30_152 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_84 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__481__A _481_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_38_252 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_26_16 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_42_15 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__391__A _373_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_141 VGND VPWR sky130_fd_sc_hd__fill_2
+X_622_ _622_/A _622_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_553_ _552_/X _556_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__566__A _559_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_484_ _481_/X _482_/X _654_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_16_93 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_145 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_12_185 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__591__B2 _590_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_35_233 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__476__A _473_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__582__B2 _684_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__582__A1 _578_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_200 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__386__A _386_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_605_ _600_/Y _601_/Y _606_/A _604_/X _605_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_398_ _398_/A _398_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_27_92 VGND VPWR sky130_fd_sc_hd__fill_1
+X_467_ _463_/Y _464_/Y _463_/A _652_/Q _467_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+X_536_ _672_/Q _536_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_4_41 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_23_236 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__555__B2 _554_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_17 VGND VPWR sky130_fd_sc_hd__fill_1
+Xclkbuf_2_2_0_clk clkbuf_2_3_0_clk/A clkbuf_3_5_0_clk/A VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__563__B _563_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__546__A1 _542_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__546__B2 _674_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_72 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_83 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_94 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__482__B1 _477_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_195 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_184 VGND VPWR sky130_fd_sc_hd__fill_2
+X_519_ _513_/Y _514_/Y _520_/A _518_/X _663_/D VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_20_206 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__645__RESET_B _432_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_93 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_82 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_71 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__574__A _574_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__519__B2 _518_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__484__A _481_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_29 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_49 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_27 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__652__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_147 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_136 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__394__A _394_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_114 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_35_70 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_139 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_19_169 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__675__CLK _676_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_32_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__479__A _446_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_150 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_161 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_17 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__660__RESET_B _414_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_31_39 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_249 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__389__A _386_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_101 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_112 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_123 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_134 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_16_117 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_189 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__698__CLK _676_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_178 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_145 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_156 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_167 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_21_94 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_142 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_3 VGND VPWR sky130_fd_sc_hd__decap_3
+X_698_ _336_/X _698_/Q _367_/X _676_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_7_52 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_42_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_131 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_21_175 VGND VPWR sky130_fd_sc_hd__decap_4
+X_621_ _693_/Q _621_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_552_ _559_/A x[15] _552_/X VGND VPWR sky130_fd_sc_hd__and2_4
+X_483_ _477_/Y _478_/Y _481_/X _482_/X _483_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XANTENNA__566__B x[17] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_16_83 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_32_93 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__476__B _474_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__492__A _492_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__642__D _642_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__582__A2 _579_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_27 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_41_237 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_223 VGND VPWR sky130_fd_sc_hd__fill_2
+X_604_ _600_/Y _601_/Y _687_/Q _601_/A _604_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_27_60 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__577__A _574_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_17_223 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_234 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_245 VGND VPWR sky130_fd_sc_hd__decap_8
+X_535_ _669_/Q _535_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_32_215 VGND VPWR sky130_fd_sc_hd__decap_3
+X_466_ _465_/X _466_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_397_ _373_/A _398_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__487__A _508_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_53 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__397__A _373_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__546__A2 _543_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_215 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_13_62 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__482__B2 _656_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__482__A1 _477_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_518_ _513_/Y _514_/Y _663_/Q _514_/A _518_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+X_449_ _645_/Q _449_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_9_241 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__685__RESET_B _383_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__605__A1_N _600_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_34_17 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_93 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_40_71 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_37_159 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_21 VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkbuf_2_1_0_clk clkbuf_1_0_0_clk/X clkbuf_3_3_0_clk/A VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__484__B _482_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__650__D _469_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__591__A1_N _585_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_104 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_28_159 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_41 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_52 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_74 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_27_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_170 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__585__A _683_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_25_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__495__A _495_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_25_118 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_33_184 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_33_140 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__645__D _645_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_228 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__483__A1_N _477_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_151 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_140 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_102 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_113 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_124 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_135 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_146 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_16_129 VGND VPWR sky130_fd_sc_hd__fill_1
+XPHY_157 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_179 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__355__B1 _703_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_168 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_21_51 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_21_62 VGND VPWR sky130_fd_sc_hd__fill_2
+X_697_ _697_/D _697_/Q _368_/X _697_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_30_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_4 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__642__CLK _669_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_173 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_15_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_29 VGND VPWR sky130_fd_sc_hd__fill_2
+X_620_ _617_/X _620_/B _692_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_29_232 VGND VPWR sky130_fd_sc_hd__decap_4
+X_551_ y _559_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__665__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_482_ _477_/Y _478_/Y _477_/A _656_/Q _482_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_8_125 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__576__B1 _574_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_73 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_72 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_8_169 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_198 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__688__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__577__B _577_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_32_205 VGND VPWR sky130_fd_sc_hd__fill_2
+X_603_ _603_/A _606_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_465_ _472_/A x[3] _465_/X VGND VPWR sky130_fd_sc_hd__and2_4
+X_534_ _534_/A _532_/X _534_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XANTENNA__593__A _685_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_396_ _394_/A _396_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_4_32 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_4_21 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__487__B x[6] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_249 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__653__D _483_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__703__CLK _697_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_41 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_13_52 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_38_93 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__482__A2 _478_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_175 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__588__A _609_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_517_ _517_/A _520_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_448_ _643_/Q _446_/X _447_/X _448_/Y VGND VPWR sky130_fd_sc_hd__a21boi_4
+X_379_ _373_/A _381_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__634__A2_N _630_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__498__A _495_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__654__RESET_B _421_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__648__D _462_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_34_29 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_8 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_223 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_234 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_138 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_37_105 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_55 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__511__A2_N _507_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__526__A2_N _522_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_237 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_226 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_64 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_19_62 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_138 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_42_185 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_18_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__619__A1_N _614_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_196 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__661__D _511_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_218 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_174 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_103 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_114 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_125 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_136 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_147 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_158 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_169 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__355__B2 _644_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__355__A1 _351_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_85 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__596__A _595_/X VGND VPWR sky130_fd_sc_hd__diode_2
+Xclkbuf_2_0_0_clk clkbuf_1_0_0_clk/X clkbuf_2_0_0_clk/X VGND VPWR sky130_fd_sc_hd__clkbuf_1
+X_696_ _696_/D _622_/A _369_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XPHY_5 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_15_152 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_166 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_43 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_19 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__656__D _491_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_550_ _550_/A _550_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_481_ _481_/A _481_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__576__B2 _577_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__342__A2_N _338_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_111 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_12_188 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_32_84 VGND VPWR sky130_fd_sc_hd__fill_2
+X_679_ _679_/D _679_/Q _390_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_7_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__679__RESET_B _390_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__497__A1_N _492_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_5_107 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_118 VGND VPWR sky130_fd_sc_hd__decap_4
+X_602_ _609_/A x[22] _603_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_27_95 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_27_84 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_51 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_27_40 VGND VPWR sky130_fd_sc_hd__decap_4
+X_464_ _652_/Q _464_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_533_ _528_/Y _529_/Y _534_/A _532_/X _533_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_40_250 VGND VPWR sky130_fd_sc_hd__decap_3
+X_395_ _394_/A _395_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__701__RESET_B _362_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_151 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_4_88 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_206 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__655__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_206 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_14_228 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_22_250 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_1_121 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_1_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__588__B x[20] VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__467__B1 _463_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_378_ _378_/A _378_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_210 VGND VPWR sky130_fd_sc_hd__fill_1
+X_516_ _544_/A x[10] _517_/A VGND VPWR sky130_fd_sc_hd__and2_4
+X_447_ _643_/Q _446_/X _447_/X VGND VPWR sky130_fd_sc_hd__or2_4
+XANTENNA__678__CLK _676_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__498__B _496_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__664__D _664_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__694__RESET_B _371_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_84 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_40_40 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_34_9 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__599__A _596_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__612__B1 _610_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_117 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_1_45 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__659__D _504_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_150 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_10_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_96 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_131 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_35_95 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_35_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_183 VGND VPWR sky130_fd_sc_hd__fill_1
+XPHY_104 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__355__A2 _352_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_115 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_126 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_137 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_148 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_159 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_21_31 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_101 VGND VPWR sky130_fd_sc_hd__decap_8
+XPHY_6 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_15_120 VGND VPWR sky130_fd_sc_hd__fill_2
+X_695_ _634_/X _629_/A _370_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_7_11 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_55 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_197 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_201 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__672__D _548_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_21_134 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_29_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_29_223 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_64 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_86 VGND VPWR sky130_fd_sc_hd__fill_2
+X_480_ _508_/A x[5] _481_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_12_123 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_145 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_35_237 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_204 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__400__A _398_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_678_ _678_/D _558_/A _392_/X _676_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__648__RESET_B _429_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_41_229 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__667__D _533_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_601_ _601_/A _601_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_394_ _394_/A _394_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_463_ _463_/A _463_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_532_ _528_/Y _529_/Y _667_/Q _670_/Q _532_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_4_78 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_4_56 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_240 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__356__A2_N _352_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__467__B2 _652_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_199 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__467__A1 _463_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_38_84 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_38_62 VGND VPWR sky130_fd_sc_hd__fill_2
+X_515_ _446_/A _544_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_377_ _378_/A _377_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_233 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_240 VGND VPWR sky130_fd_sc_hd__decap_4
+X_446_ _446_/A x[31] _446_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__680__D _680_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__663__RESET_B _411_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_97 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_24_86 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_42 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_40_63 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_30 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__599__B _597_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_27_9 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__612__B2 _611_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__645__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_429_ _430_/A _429_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__675__D _562_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_10_88 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_53 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_121 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_27_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__668__CLK _669_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_42_187 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_42_165 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_32_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_250 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__403__A _372_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_151 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_165 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_132 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_33_110 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__597__B1 _685_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__349__B1 _350_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_105 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_116 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_24_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_127 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_138 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_149 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_21_54 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_21_98 VGND VPWR sky130_fd_sc_hd__fill_2
+X_694_ _628_/X _615_/A _371_/X _676_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_30_146 VGND VPWR sky130_fd_sc_hd__decap_6
+XPHY_7 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__503__B1 _499_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_3 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_21_102 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_21_146 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_202 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_32 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_32_64 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_32_42 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_117 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_12_179 VGND VPWR sky130_fd_sc_hd__decap_6
+X_677_ _569_/X _677_/Q _393_/X _676_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_7_172 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__688__RESET_B _380_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__683__D _591_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__501__A _508_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_600_ _687_/Q _600_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_531_ _531_/A _534_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_17_227 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_238 VGND VPWR sky130_fd_sc_hd__decap_6
+X_393_ _394_/A _393_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_462_ _459_/X _460_/X _462_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_4_175 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_4_13 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__411__A _414_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__678__D _678_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_99 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__467__A2 _464_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_123 VGND VPWR sky130_fd_sc_hd__decap_4
+X_514_ _514_/A _514_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_376_ _378_/A _376_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_445_ _445_/A _443_/X _642_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_9_245 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__406__A _406_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_204 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_25 VGND VPWR sky130_fd_sc_hd__fill_1
+X_428_ _416_/A _430_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_359_ rst _372_/A VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_36_196 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_36_185 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_28_108 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__691__D _691_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_10_12 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_10 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_177 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_35_53 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_42 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_174 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_42_199 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__597__B2 _688_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__597__A1 _593_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_188 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_33_144 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__349__B2 _348_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__686__D _599_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_100 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_106 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_117 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_128 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_139 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_21_77 VGND VPWR sky130_fd_sc_hd__fill_2
+X_693_ _627_/X _693_/Q _374_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_30_125 VGND VPWR sky130_fd_sc_hd__decap_8
+XPHY_8 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__414__A _414_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__503__A1 _499_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__503__B2 _500_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_16_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__658__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_114 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_77 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__497__B1 _495_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_32_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_180 VGND VPWR sky130_fd_sc_hd__fill_2
+X_676_ _563_/X _550_/A _394_/X _676_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__409__A _406_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_140 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_195 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_41_209 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__657__RESET_B _418_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_239 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__501__B x[8] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_32_209 VGND VPWR sky130_fd_sc_hd__decap_4
+X_530_ _544_/A x[12] _531_/A VGND VPWR sky130_fd_sc_hd__and2_4
+X_461_ _456_/Y _457_/Y _459_/X _460_/X _461_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_40_242 VGND VPWR sky130_fd_sc_hd__decap_8
+X_392_ _394_/A _392_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_4_187 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_4_154 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_4_143 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_4_121 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_25 VGND VPWR sky130_fd_sc_hd__fill_2
+X_659_ _504_/X _499_/A _415_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_31_220 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__602__A _609_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__694__D _628_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_209 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__633__B1 _629_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_242 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_13_12 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_56 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__512__A _509_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_113 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA_clkbuf_3_5_0_clk_A clkbuf_3_5_0_clk/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_444_ _437_/Y _438_/Y _445_/A _443_/X _444_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_513_ _663_/Q _513_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_375_ _378_/A _375_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_202 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_9_213 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__422__A _416_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__689__D _612_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__672__RESET_B _399_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_11 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_32 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__507__A _507_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_6_238 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_10_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_234 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_10_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_37_109 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__417__A _420_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_358_ _366_/A _358_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_427_ _423_/A _427_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__691__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_142 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_131 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_10_46 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_57 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_27_120 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_44 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_19_66 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_42_156 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_134 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA_clkbuf_2_2_0_clk_A clkbuf_2_3_0_clk/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__597__A2 _594_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_142 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_186 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__540__A1_N _535_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__555__A1_N _549_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__610__A _610_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_145 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_24_134 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_112 VGND VPWR sky130_fd_sc_hd__fill_1
+XPHY_107 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_118 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_129 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_21_67 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__520__A _520_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_692_ _692_/D _692_/Q _375_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XPHY_9 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_15_112 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_159 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_156 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_178 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_189 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__503__A2 _500_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__704__RESET_B _358_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_38_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_204 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__430__A _430_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__340__A _339_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__697__D _697_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_16_12 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_11 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__515__A _446_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_137 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__497__B2 _496_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_32_88 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_35_229 VGND VPWR sky130_fd_sc_hd__fill_2
+X_675_ _562_/X _557_/A _395_/X _676_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__425__A _423_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_192 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_34_251 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__697__RESET_B _368_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_8_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA_clkbuf_3_1_0_clk_A clkbuf_2_0_0_clk/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_210 VGND VPWR sky130_fd_sc_hd__decap_4
+X_391_ _373_/A _394_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_27_99 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_27_88 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_240 VGND VPWR sky130_fd_sc_hd__decap_4
+X_460_ _456_/Y _457_/Y _456_/A _650_/Q _460_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_4_133 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__648__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_658_ _498_/X _486_/A _417_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_31_232 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_31_210 VGND VPWR sky130_fd_sc_hd__fill_2
+X_589_ _588_/X _592_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__602__B x[22] VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__633__A1 _629_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__633__B2 _698_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_46 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_13_68 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_79 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__512__B _512_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_158 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_38_98 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_32 VGND VPWR sky130_fd_sc_hd__decap_3
+X_374_ _378_/A _374_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_512_ _509_/X _512_/B _512_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+X_443_ _437_/Y _438_/Y _641_/Q _646_/Q _443_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_13_221 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_180 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_191 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__613__A _610_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_5_80 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_39_195 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_39_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__641__RESET_B _436_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_78 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__523__A _544_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_99 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_3 VGND VPWR sky130_fd_sc_hd__decap_4
+X_357_ _354_/X _355_/X _357_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+X_426_ _423_/A _426_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__533__B1 _534_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__433__A _430_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__608__A _692_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_165 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_36_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__343__A _340_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_42_113 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_35_66 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__428__A _416_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_132 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_154 VGND VPWR sky130_fd_sc_hd__fill_2
+X_409_ _406_/A _409_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_2_81 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_108 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__338__A _338_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_119 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__520__B _518_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_691_ _691_/D _691_/Q _376_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__681__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_15 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_48 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__461__A2_N _457_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_190 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_21_127 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__621__A _693_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_29_238 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_16_46 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__531__A _531_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_674_ _556_/X _674_/Q _396_/X _673_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__569__A1_N _564_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_120 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_131 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__441__A _472_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_219 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_208 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__616__A _609_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__351__A _703_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__666__RESET_B _407_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_233 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_27_67 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_27_56 VGND VPWR sky130_fd_sc_hd__decap_4
+X_390_ _386_/A _390_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_657_ _497_/X _492_/A _418_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__436__A _366_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_588_ _609_/A x[20] _588_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__633__A2 _630_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_200 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__346__A _624_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_8_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_66 VGND VPWR sky130_fd_sc_hd__decap_4
+X_511_ _506_/Y _507_/Y _509_/X _512_/B _511_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_373_ _373_/A _378_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_442_ _442_/A _445_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_237 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__613__B _611_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_67 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_12 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__681__RESET_B _388_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__523__B x[11] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_17 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_28 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_39 VGND VPWR sky130_fd_sc_hd__decap_4
+X_425_ _423_/A _425_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__533__B2 _532_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_356_ _351_/Y _352_/Y _354_/X _355_/X _703_/D VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_14_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__624__A _624_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__343__B _341_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_10_37 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_125 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_42_103 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_35_34 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_188 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_27_111 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__460__B1 _456_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_57 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_42_147 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__534__A _534_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_169 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_33_114 VGND VPWR sky130_fd_sc_hd__fill_2
+X_408_ _406_/A _408_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_18_199 VGND VPWR sky130_fd_sc_hd__fill_2
+X_339_ _624_/A x[28] _339_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_24_125 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_93 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_32_191 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_109 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__354__A _353_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_47 VGND VPWR sky130_fd_sc_hd__decap_4
+X_690_ _613_/X _601_/A _377_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__529__A _670_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_169 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_180 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_11_80 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__439__A y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_29_228 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_217 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_29_206 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_69 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_46 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__583__A2_N _579_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__598__A2_N _594_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_673_ _555_/X _673_/Q _398_/X _673_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__441__B x[0] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_165 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_176 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_14_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__616__B x[24] VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__632__A _632_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__671__CLK _676_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_27_46 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__542__A _542_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_113 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_4_102 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__627__B1 _625_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_179 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_4_17 VGND VPWR sky130_fd_sc_hd__fill_2
+X_656_ _491_/X _656_/Q _419_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__475__A2_N _471_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_587_ y _609_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_16_220 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__694__CLK _676_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__452__A _451_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__618__B1 _691_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__346__B x[29] VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__362__A _363_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_12 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_105 VGND VPWR sky130_fd_sc_hd__fill_2
+X_510_ _506_/Y _507_/Y _661_/Q _507_/A _512_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+XANTENNA__537__A _544_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_441_ _472_/A x[0] _442_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_9_249 VGND VPWR sky130_fd_sc_hd__decap_4
+X_372_ _372_/A _373_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_13_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__447__A _643_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_639_ _638_/X _639_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_5_93 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_39_175 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_39_153 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__357__A _354_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_47 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_208 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_10_215 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_6_219 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__650__RESET_B _426_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_424_ _423_/A _424_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_355_ _351_/Y _352_/Y _703_/Q _644_/Q _355_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XANTENNA__624__B x[25] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_10_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_14 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_35_57 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_27_178 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_27_145 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__460__A1 _456_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__460__B2 _650_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__534__B _532_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__550__A _550_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__700__D _700_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_41_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_90 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+X_338_ _338_/A _338_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_407_ _406_/A _407_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_24_115 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_24_104 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__635__A _635_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__370__A _371_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__545__A _545_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_148 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_70 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_16_7 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__455__A _452_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_118 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_37_240 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__365__A _372_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_129 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_20_140 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_173 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_20_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_240 VGND VPWR sky130_fd_sc_hd__decap_12
+X_672_ _548_/X _672_/Q _399_/X _673_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_11_162 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__590__B1 _683_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_91 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_199 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__342__B1 _340_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_195 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_240 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_34_210 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_93 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__675__RESET_B _395_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_147 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_4_125 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_4_29 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__627__B2 _628_/B VGND VPWR sky130_fd_sc_hd__diode_2
+X_655_ _490_/X _655_/Q _420_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_31_224 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_91 VGND VPWR sky130_fd_sc_hd__decap_4
+X_586_ _686_/Q _586_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XPHY_260 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__618__A1 _614_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__618__B2 _615_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__554__B1 _673_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_16 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_117 VGND VPWR sky130_fd_sc_hd__decap_4
+X_371_ _371_/A _371_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__537__B x[13] VGND VPWR sky130_fd_sc_hd__diode_2
+X_440_ _446_/A _472_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__553__A _552_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_9_206 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_217 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__703__D _703_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__661__CLK _673_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_569_ _564_/Y _565_/Y _570_/A _568_/X _569_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_638_ _624_/A x[27] _638_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__447__B _446_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__463__A _463_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_15 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__638__A _624_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__357__B _355_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__373__A _373_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_37 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__690__RESET_B _377_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__548__A _545_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__684__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_423_ _423_/A _423_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_354_ _353_/X _354_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__518__B1 _663_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_80 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_146 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_102 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__458__A _472_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_27_102 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__368__A _371_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__460__A2 _457_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_234 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_102 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_146 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_179 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_80 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_91 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+X_337_ _699_/Q _337_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_406_ _406_/A _406_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_41_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_51 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_40 VGND VPWR sky130_fd_sc_hd__fill_2
+Xclkbuf_1_1_0_clk clkbuf_0_clk/X clkbuf_2_3_0_clk/A VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__635__B _635_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_27 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__444__A1_N _437_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_116 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_18 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_208 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_9 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__455__B _453_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__471__A _471_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_171 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_32_37 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_32_15 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_12_119 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_16_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__381__A _381_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_163 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__556__A _556_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_252 VGND VPWR sky130_fd_sc_hd__fill_1
+X_671_ _547_/X _542_/A _400_/X _676_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_22_70 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_152 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_174 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__590__A1 _585_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__590__B2 _686_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__342__B2 _341_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__466__A _465_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_8_72 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__376__A _378_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_27_15 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__644__RESET_B _433_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_159 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_4_137 VGND VPWR sky130_fd_sc_hd__decap_3
+X_654_ _654_/D _471_/A _421_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XPHY_261 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_250 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_31_236 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_214 VGND VPWR sky130_fd_sc_hd__decap_4
+X_585_ _683_/Q _585_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_16_200 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__618__A2 _615_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__554__B2 _550_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__554__A1 _549_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_225 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_129 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_58 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__490__B1 _488_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_225 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_236 VGND VPWR sky130_fd_sc_hd__fill_2
+X_370_ _371_/A _370_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_0_140 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_184 VGND VPWR sky130_fd_sc_hd__fill_2
+X_637_ _637_/A _637_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_499_ _499_/A _499_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_568_ _564_/Y _565_/Y _677_/Q _565_/A _568_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_5_62 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_51 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__638__B x[27] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_26 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_206 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__548__B _546_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__564__A _677_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_422_ _416_/A _423_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_353_ _446_/A x[30] _353_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_14_71 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__518__B2 _514_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__518__A1 _513_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_5_243 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_14_93 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__454__B1 _452_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__458__B x[2] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_49 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__384__A _381_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_2_202 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__612__A1_N _607_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__559__A _559_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__651__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_128 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_106 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__627__A1_N _621_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_18_136 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_81 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_70 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_92 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+X_405_ _406_/A _405_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_336_ _639_/X _336_/B _336_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_41_80 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_85 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__469__A _466_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__674__CLK _673_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__379__A _373_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__669__RESET_B _402_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_172 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_161 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_91 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_14_150 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__504__A1_N _499_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__697__CLK _697_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_194 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__519__A1_N _513_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_32_27 VGND VPWR sky130_fd_sc_hd__decap_4
+X_670_ _541_/X _670_/Q _401_/X _669_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__556__B _554_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_93 VGND VPWR sky130_fd_sc_hd__fill_2
+Xclkbuf_1_0_0_clk clkbuf_0_clk/X clkbuf_1_0_0_clk/X VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XFILLER_22_82 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__572__A _572_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_131 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__590__A2 _586_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__490__A1_N _485_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_220 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_84 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_40_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__392__A _394_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__684__RESET_B _384_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__567__A _567_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_653_ _483_/X _477_/A _423_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_16_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_262 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_251 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_240 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_33_70 VGND VPWR sky130_fd_sc_hd__fill_2
+X_584_ _581_/X _582_/X _682_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_16_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_17_82 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_12_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__477__A _477_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_22_204 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__554__A2 _550_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__490__B2 _489_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__387__A _386_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__335__A1_N _636_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_81 VGND VPWR sky130_fd_sc_hd__fill_2
+X_567_ _567_/A _570_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_636_ _697_/Q _636_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_498_ _495_/X _496_/X _498_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_8_230 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_123 VGND VPWR sky130_fd_sc_hd__decap_3
+X_421_ _420_/A _421_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_352_ _644_/Q _352_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__518__A2 _514_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_93 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__580__A _559_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_91 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_39_8 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__454__B2 _453_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_619_ _614_/Y _615_/Y _617_/X _620_/B _691_/D VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_35_38 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_115 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_35_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__559__B x[16] VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_82 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_71 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_33_118 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_60 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_192 VGND VPWR sky130_fd_sc_hd__fill_2
+X_404_ _416_/A _406_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_41_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_82 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_93 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+X_335_ _636_/Y _637_/Y _639_/X _336_/B _697_/D VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XANTENNA__485__A _655_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__469__B _467_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_32_162 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__395__A _394_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_195 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__533__A2_N _529_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_84 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_81 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_3 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_37_210 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__641__CLK _669_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_176 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__575__B1 _679_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_121 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_136 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_169 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_11_143 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_235 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__664__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_8_41 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_117 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_4_106 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__653__RESET_B _423_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__687__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_652_ _476_/X _652_/Q _424_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_583_ _578_/Y _579_/Y _581_/X _582_/X _681_/D VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XPHY_263 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_252 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_241 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_230 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__493__A _660_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__539__B1 _669_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__643__D _447_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_38_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_109 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__578__A _681_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_704_ _357_/X _704_/Q _358_/X _697_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_0_153 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_93 VGND VPWR sky130_fd_sc_hd__fill_2
+X_566_ _559_/A x[17] _567_/A VGND VPWR sky130_fd_sc_hd__and2_4
+X_635_ _635_/A _635_/B _696_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+X_497_ _492_/Y _493_/Y _495_/X _496_/X _497_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XANTENNA__702__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_5_31 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_39_157 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__488__A _487_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__398__A _398_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_420_ _420_/A _420_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_351_ _703_/Q _351_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__580__B x[19] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_40 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_51 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_84 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_245 VGND VPWR sky130_fd_sc_hd__decap_8
+X_549_ _673_/Q _549_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_618_ _614_/Y _615_/Y _691_/Q _615_/A _620_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+XANTENNA__349__A1_N _344_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_2_215 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_83 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_130 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_72 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_61 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_50 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_94 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+X_403_ _372_/A _416_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_2_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_182 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_17_193 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__651__D _475_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__678__RESET_B _392_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_2_3 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_36_60 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__586__A _686_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_93 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_14_163 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_185 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__646__D _455_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__700__RESET_B _363_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_111 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_133 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_144 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_28_200 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__575__A1 _571_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__575__B2 _572_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_51 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_11_166 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_11_177 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_188 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_199 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_214 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_206 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_236 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__547__A2_N _543_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_129 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__693__RESET_B _374_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_651_ _475_/X _470_/A _425_/X _659_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_582_ _578_/Y _579_/Y _681_/Q _684_/Q _582_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_16_203 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_17_40 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_264 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_253 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_242 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_231 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_220 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_31_228 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_195 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_151 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__539__A1 _535_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__539__B2 _672_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__475__B1 _473_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_217 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__654__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_121 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_0_187 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_176 VGND VPWR sky130_fd_sc_hd__fill_2
+X_703_ _703_/D _703_/Q _363_/A _697_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_634_ _629_/Y _630_/Y _635_/A _635_/B _634_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_496_ _492_/Y _493_/Y _492_/A _660_/Q _496_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XANTENNA__594__A _688_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_565_ _565_/A _565_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_39_114 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_76 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_43 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__654__D _654_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_19 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__677__CLK _676_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_350_ _350_/A _348_/X _702_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_5_213 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_235 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_63 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_74 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_60 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_30_84 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__589__A _588_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__611__B1 _607_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_617_ _617_/A _617_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_36_106 VGND VPWR sky130_fd_sc_hd__fill_2
+X_548_ _545_/X _546_/X _548_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+X_479_ _446_/A _508_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__499__A _499_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__649__D _468_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_19 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_109 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_27_139 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_238 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_18_106 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_84 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_73 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_62 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_172 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_51 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_25_62 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_51 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_95 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_40 VGND VPWR sky130_fd_sc_hd__decap_3
+X_402_ _398_/A _402_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_32_120 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_2_99 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_153 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_120 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_31 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_11_53 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__647__RESET_B _430_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_72 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_37_223 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_28_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__662__D _512_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_167 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_28_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_127 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__575__A2 _572_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_134 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_156 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_22_74 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_245 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_215 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_76 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_6_193 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__657__D _497_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_650_ _469_/X _650_/Q _426_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XPHY_243 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_232 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__662__RESET_B _412_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_221 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_210 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+X_581_ _580_/X _581_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_16_215 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_52 VGND VPWR sky130_fd_sc_hd__fill_1
+XPHY_265 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_254 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_33_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_174 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_229 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__539__A2 _536_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__475__B2 _474_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_240 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_100 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_0_133 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_144 VGND VPWR sky130_fd_sc_hd__decap_3
+X_702_ _702_/D _338_/A _361_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_633_ _629_/Y _630_/Y _629_/A _698_/Q _635_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+X_495_ _495_/A _495_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_564_ _677_/Q _564_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_5_55 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_66 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_10_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__670__D _541_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__448__A1 _643_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_38_170 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA_clkbuf_3_4_0_clk_A clkbuf_3_5_0_clk/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_30 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__611__A1 _607_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_616_ _609_/A x[24] _617_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__611__B2 _692_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_547_ _542_/Y _543_/Y _545_/X _546_/X _547_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_29_181 VGND VPWR sky130_fd_sc_hd__fill_2
+X_478_ _656_/Q _478_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_27_107 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_195 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_173 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_140 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__665__D _526_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__644__CLK _697_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_30 VGND VPWR sky130_fd_sc_hd__decap_3
+X_401_ _398_/A _401_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XPHY_85 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_165 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_41_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_74 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_63 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_52 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_96 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_41 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_89 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__667__CLK _669_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_32_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_198 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_32_187 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__348__B1 _701_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_176 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_132 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__687__RESET_B _381_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__511__B1 _509_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA_clkbuf_2_1_0_clk_A clkbuf_1_0_0_clk/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_198 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__569__B1 _570_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_117 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_11_113 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_22_97 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_213 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_40_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_205 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__673__D _555_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_109 VGND VPWR sky130_fd_sc_hd__decap_4
+X_580_ _559_/A x[19] _580_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XPHY_255 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_244 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_233 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_222 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_211 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_200 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_17_97 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_74 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__401__A _398_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_22_219 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__668__D _534_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA_clkbuf_3_0_0_clk_A clkbuf_2_0_0_clk/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_156 VGND VPWR sky130_fd_sc_hd__decap_4
+X_563_ _563_/A _563_/B _563_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_28_52 VGND VPWR sky130_fd_sc_hd__fill_2
+X_701_ _701_/D _701_/Q _362_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_632_ _632_/A _635_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_494_ _508_/A x[7] _495_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_8_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_234 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_5_34 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_149 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__448__A2 _446_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_97 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_75 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_42 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_14_98 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_95 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_39_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__611__A2 _608_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_615_ _615_/A _615_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_546_ _542_/Y _543_/Y _542_/A _674_/Q _546_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+X_477_ _477_/A _477_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__681__D _681_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_9 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_64 VGND VPWR sky130_fd_sc_hd__decap_3
+X_400_ _398_/A _400_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XPHY_53 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_196 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_185 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_25_42 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_20 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_31 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_42 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_177 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_75 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_97 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_86 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_2_57 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_111 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__348__B2 _704_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__348__A1 _344_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_529_ _670_/Q _529_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_17_163 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_174 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__676__D _563_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_111 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_199 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_188 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_144 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__511__B2 _512_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_66 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__656__RESET_B _419_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_85 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_36_41 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_122 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__404__A _416_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_236 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__569__B2 _568_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_158 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__562__A1_N _557_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__657__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_87 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_43 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_22_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_147 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__496__B1 _492_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_3 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_34_239 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_34_206 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_236 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_45 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_6_162 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_32 VGND VPWR sky130_fd_sc_hd__decap_8
+XPHY_256 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_245 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_234 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_223 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_33_53 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_42 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_212 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_201 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_17_87 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__671__RESET_B _400_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_143 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_132 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__454__A1_N _449_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_13_209 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__684__D _592_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__502__A _501_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_700_ _700_/D _637_/A _363_/X _697_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_493_ _660_/Q _493_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_562_ _557_/Y _558_/Y _563_/A _563_/B _562_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_28_86 VGND VPWR sky130_fd_sc_hd__fill_2
+X_631_ _624_/A x[26] _632_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_12_220 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__412__A _414_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__679__D _679_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__605__B1 _606_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_55 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_30_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_205 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_39_52 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_172 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_161 VGND VPWR sky130_fd_sc_hd__fill_2
+X_614_ _691_/Q _614_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_476_ _473_/X _474_/X _476_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+X_545_ _545_/A _545_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__407__A _406_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_35_131 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__703__RESET_B _363_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__690__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_41_123 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_76 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_65 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_120 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_54 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_10 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_98 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_87 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_21 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_32 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_43 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_86 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_41_53 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_36 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_120 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_131 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__348__A2 _345_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_459_ _458_/X _459_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_528_ _667_/Q _528_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__600__A _687_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__692__D _692_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__605__A2_N _601_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_101 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_11_34 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_64 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__696__RESET_B _369_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_145 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_167 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__448__B1_N _447_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_204 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__420__A _420_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_9_182 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__591__A2_N _586_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_137 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__687__D _605_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_204 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__505__A _502_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_66 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_22_55 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__496__B2 _660_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__496__A1 _492_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__415__A _414_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_8_68 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_79 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_218 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__483__A2_N _478_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_17_44 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_55 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_257 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_246 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_235 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_224 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_33_98 VGND VPWR sky130_fd_sc_hd__decap_8
+XPHY_213 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_202 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_3_199 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__576__A1_N _571_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__647__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_125 VGND VPWR sky130_fd_sc_hd__fill_2
+X_630_ _698_/Q _630_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_492_ _492_/A _492_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_561_ _557_/Y _558_/Y _557_/A _558_/A _563_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_12_210 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_203 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_118 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__603__A _603_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__605__B2 _604_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__695__D _634_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_22 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_11 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_23 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_67 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__468__A1_N _463_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_20 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_30_88 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_239 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__513__A _663_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_613_ _610_/X _611_/X _613_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_29_184 VGND VPWR sky130_fd_sc_hd__fill_2
+X_475_ _470_/Y _471_/Y _473_/X _474_/X _475_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_544_ _544_/A x[14] _545_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__532__B1 _667_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__423__A _423_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_35_165 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_110 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__508__A _508_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_77 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_66 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_55 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_99 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_88 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_55 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_44 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_99 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_88 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_11 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_22 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_33 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_2_15 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_1_220 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__418__A _420_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_527_ _527_/A _527_/B _666_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_17_143 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_40_190 VGND VPWR sky130_fd_sc_hd__decap_6
+X_458_ _472_/A x[2] _458_/X VGND VPWR sky130_fd_sc_hd__and2_4
+X_389_ _386_/A _389_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_23_157 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_57 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_36_76 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_32 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_14_102 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__665__RESET_B _408_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__680__CLK _697_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_149 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_23 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_109 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_11_127 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__505__B _505_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__496__A2 _493_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_78 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__521__A _665_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_216 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_19_249 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__431__A _430_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__619__A2_N _615_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_33_230 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__606__A _606_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__698__D _336_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_225 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_214 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_203 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_24_252 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_17_78 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_258 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_247 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_236 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_33_66 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_11 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__516__A _544_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_189 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_178 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_3_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__680__RESET_B _389_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_230 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__426__A _423_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_81 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__336__A _639_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_560_ _559_/X _563_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_28_77 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_137 VGND VPWR sky130_fd_sc_hd__fill_1
+X_491_ _488_/X _489_/X _491_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_8_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_59 VGND VPWR sky130_fd_sc_hd__fill_2
+X_689_ _612_/X _607_/A _378_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_38_163 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__497__A2_N _493_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_45 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_79 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_43 VGND VPWR sky130_fd_sc_hd__fill_2
+X_612_ _607_/Y _608_/Y _610_/X _611_/X _612_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_39_98 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_87 VGND VPWR sky130_fd_sc_hd__fill_2
+X_543_ _674_/Q _543_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_474_ _470_/Y _471_/Y _470_/A _471_/A _474_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XANTENNA__532__A1 _528_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__532__B2 _670_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_35_199 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_35_177 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__614__A _691_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_12 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_169 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_41_158 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_41_114 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_41_103 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__508__B x[9] VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_78 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_67 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_56 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_188 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_177 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_25_34 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_45 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_89 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_23 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_34 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_99 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_41_44 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__524__A _524_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_2_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_32_125 VGND VPWR sky130_fd_sc_hd__decap_12
+X_526_ _521_/Y _522_/Y _527_/A _527_/B _526_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_17_111 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_199 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_158 VGND VPWR sky130_fd_sc_hd__fill_2
+X_388_ _386_/A _388_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__434__A _366_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_457_ _650_/Q _457_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__609__A _609_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_136 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__344__A _701_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_99 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_35_9 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__429__A _430_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_509_ _508_/X _509_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_70 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__339__A _624_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_11_117 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_139 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_121 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_37 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_12_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_187 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_209 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_18_250 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__606__B _604_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__622__A _622_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_259 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_248 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_237 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_226 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_215 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_204 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_16_209 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__516__B x[10] VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__670__CLK _669_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__626__B1 _693_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_30_223 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_201 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__442__A _442_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_31_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__617__A _617_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_60 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_21_201 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__693__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__352__A _644_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__336__B _336_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_245 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_149 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_23 VGND VPWR sky130_fd_sc_hd__decap_4
+X_490_ _485_/Y _486_/Y _488_/X _489_/X _490_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XANTENNA__527__A _527_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_5_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_8 VGND VPWR sky130_fd_sc_hd__fill_2
+X_688_ _606_/X _688_/Q _380_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__437__A _641_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_38_197 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__347__A _347_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_36 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_14_47 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_219 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__659__RESET_B _415_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_33 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_120 VGND VPWR sky130_fd_sc_hd__fill_2
+X_611_ _607_/Y _608_/Y _607_/A _692_/Q _611_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+X_542_ _542_/A _542_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_473_ _473_/A _473_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__532__A2 _529_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_123 VGND VPWR sky130_fd_sc_hd__decap_8
+Xclkbuf_3_7_0_clk clkbuf_3_6_0_clk/A _692_/CLK VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__630__A _698_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_145 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_46 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_13 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_24 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_35 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_79 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_68 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_57 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_9_3 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_101 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_137 VGND VPWR sky130_fd_sc_hd__decap_12
+X_525_ _521_/Y _522_/Y _665_/Q _668_/Q _527_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+X_456_ _456_/A _456_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_17_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_178 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_189 VGND VPWR sky130_fd_sc_hd__fill_2
+X_387_ _386_/A _387_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__450__A _450_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__609__B x[23] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_31_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__625__A _625_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_115 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__360__A _372_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_45 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_36_23 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_159 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__535__A _669_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__674__RESET_B _396_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_508_ _508_/A x[9] _508_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XANTENNA__445__A _445_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_9_152 VGND VPWR sky130_fd_sc_hd__fill_2
+X_439_ y _446_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_13_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_9_163 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_9_174 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_251 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__339__B x[28] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_27_240 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__341__B1 _699_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_10_140 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_249 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_238 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_227 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_33_57 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_216 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_205 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_3_114 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_103 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__626__A1 _621_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__626__B2 _622_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_147 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__562__B1 _563_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_213 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_24_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_94 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_224 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_9_92 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_106 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__543__A _674_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__527__B _527_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_202 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_39 VGND VPWR sky130_fd_sc_hd__fill_2
+X_687_ _605_/X _687_/Q _381_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_18_90 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__628__A _625_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__660__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__526__B1 _527_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__363__A _363_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_59 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_30_69 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_30_36 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_5_209 VGND VPWR sky130_fd_sc_hd__fill_2
+X_610_ _610_/A _610_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_39_56 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_39_12 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_132 VGND VPWR sky130_fd_sc_hd__fill_2
+X_472_ _472_/A x[4] _473_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_29_176 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_29_165 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__699__RESET_B _364_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__538__A _537_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_541_ _541_/A _539_/X _541_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_4_220 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__683__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_6_93 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_41_127 VGND VPWR sky130_fd_sc_hd__fill_1
+XPHY_69 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_58 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_135 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_25_47 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_47 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__358__A _366_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_14 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_25 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_36 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_57 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_1_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_32_149 VGND VPWR sky130_fd_sc_hd__decap_4
+X_455_ _452_/X _453_/X _455_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+X_524_ _524_/A _527_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_386_ _386_/A _386_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_31_160 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_149 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_38 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_49 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_68 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__551__A y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__701__D _701_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_219 VGND VPWR sky130_fd_sc_hd__fill_2
+Xclkbuf_3_6_0_clk clkbuf_3_6_0_clk/A _676_/CLK VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__643__RESET_B _434_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_507_ _507_/A _507_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_369_ _371_/A _369_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_438_ _646_/Q _438_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__445__B _443_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_9_120 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__634__A1_N _629_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__636__A _697_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__371__A _371_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_59 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_42_222 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_6_101 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_152 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_6_145 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__341__B2 _338_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__341__A1 _337_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_200 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__456__A _456_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__511__A1_N _506_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_17_48 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_239 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_228 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_33_36 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_217 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_206 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_24_244 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__526__A1_N _521_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__366__A _366_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__626__A2 _622_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__562__B2 _563_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_17_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_21_236 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_129 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_8_207 VGND VPWR sky130_fd_sc_hd__decap_3
+X_686_ _599_/X _686_/Q _382_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_7_240 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_38_166 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_133 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_122 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__628__B _628_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__526__B2 _527_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_27 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_30_26 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_29_111 VGND VPWR sky130_fd_sc_hd__fill_2
+X_540_ _535_/Y _536_/Y _541_/A _539_/X _540_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_471_ _471_/A _471_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__668__RESET_B _405_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__704__D _357_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__342__A1_N _337_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_35_169 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_136 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_35_114 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__453__B1 _645_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_669_ _540_/X _669_/Q _402_/X _669_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__464__A _652_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_6_83 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__444__B1 _445_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__639__A _638_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__374__A _378_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_59 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_125 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_59 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_48 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_15 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_26 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_37 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__549__A _673_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_523_ _544_/A x[11] _524_/A VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_17_169 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_180 VGND VPWR sky130_fd_sc_hd__decap_3
+X_454_ _449_/Y _450_/Y _452_/X _453_/X _645_/D VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_385_ _373_/A _386_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__459__A _458_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__650__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_23_106 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_191 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__369__A _371_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_106 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_14_139 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__673__CLK _673_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+X_506_ _661_/Q _506_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__683__RESET_B _386_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_437_ _641_/Q _437_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_368_ _371_/A _368_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_3_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_51 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_11_109 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__696__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_19_209 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_93 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__341__A2 _338_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_8 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_242 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_37_90 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_33_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_33_234 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__540__A2_N _536_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__555__A2_N _550_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__472__A _472_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XPHY_207 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_24_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_24_201 VGND VPWR sky130_fd_sc_hd__decap_8
+XPHY_229 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_218 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA__382__A _381_/A VGND VPWR sky130_fd_sc_hd__diode_2
+Xclkbuf_3_5_0_clk clkbuf_3_5_0_clk/A _686_/CLK VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__557__A _557_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_215 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_15_201 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_234 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_2_171 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_0_52 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_63 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_28_48 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__377__A _378_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_215 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_8_219 VGND VPWR sky130_fd_sc_hd__fill_2
+X_685_ _598_/X _685_/Q _383_/X _692_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_18_81 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_91 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_230 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_145 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_47 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_123 VGND VPWR sky130_fd_sc_hd__fill_2
+X_470_ _470_/A _470_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__570__A _570_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_200 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__453__A1 _449_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_20_82 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_93 VGND VPWR sky130_fd_sc_hd__decap_4
+X_599_ _596_/X _597_/X _599_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+XANTENNA__453__B2 _450_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_668_ _534_/X _668_/Q _405_/X _669_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_6_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__480__A _508_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__444__B2 _443_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_41_118 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_34_170 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_38 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_49 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_16 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_27 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_38 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_15 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__390__A _386_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_236 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_1_225 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_1_203 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__565__A _565_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_522_ _668_/Q _522_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_453_ _449_/Y _450_/Y _645_/Q _450_/A _453_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_17_115 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_40_162 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_140 VGND VPWR sky130_fd_sc_hd__fill_2
+X_384_ _381_/A _384_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_31_70 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_31_140 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_16_170 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_184 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_31_173 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_37 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__385__A _373_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_14_118 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA_clkbuf_3_7_0_clk_A clkbuf_3_6_0_clk/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_151 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__356__A1_N _351_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_7_3 VGND VPWR sky130_fd_sc_hd__fill_2
+X_505_ _502_/X _505_/B _505_/X VGND VPWR sky130_fd_sc_hd__xor2_4
+X_436_ _366_/A _436_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_100 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__652__RESET_B _424_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_367_ _371_/A _367_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_111 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_74 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__583__B1 _581_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__335__B1 _639_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_6_125 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_158 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_121 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_10_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__472__B x[4] VGND VPWR sky130_fd_sc_hd__diode_2
+X_419_ _420_/A _419_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XPHY_219 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_208 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_17_28 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__663__CLK _663_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_139 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_128 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_30_205 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__547__B1 _545_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__573__A _559_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__686__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_21_249 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_109 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__393__A _394_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_684_ _592_/X _684_/Q _384_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_18_93 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__569__A2_N _565_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__478__A _656_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_3 VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkbuf_3_4_0_clk clkbuf_3_5_0_clk/A _697_/CLK VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XANTENNA__701__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_37 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__388__A _386_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__570__B _568_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_4_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_4_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__677__RESET_B _393_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__453__A2 _450_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_598_ _593_/Y _594_/Y _596_/X _597_/X _598_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+X_667_ _533_/X _667_/Q _406_/X _669_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA_clkbuf_1_1_0_clk_A clkbuf_0_clk/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__480__B x[5] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_149 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_17 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_28 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_27 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_34_182 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_28 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_39 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA_clkbuf_3_3_0_clk_A clkbuf_3_3_0_clk/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_25_193 VGND VPWR sky130_fd_sc_hd__decap_4
+X_383_ _381_/A _383_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_521_ _665_/Q _521_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_452_ _451_/X _452_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_15_50 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_127 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_40_196 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_40_152 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__581__A _580_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_83 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__491__A _488_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__641__D _444_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_39_241 VGND VPWR sky130_fd_sc_hd__decap_3
+X_504_ _499_/Y _500_/Y _502_/X _505_/B _504_/X VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_26_93 VGND VPWR sky130_fd_sc_hd__decap_4
+X_435_ _366_/A _435_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_123 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_130 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_141 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_152 VGND VPWR sky130_fd_sc_hd__fill_2
+X_366_ _366_/A _371_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__692__RESET_B _375_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_9_167 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_178 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__486__A _486_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_29 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__583__B2 _582_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__335__B2 _336_/B VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__396__A _394_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_27_200 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_42_236 VGND VPWR sky130_fd_sc_hd__decap_12
+XFILLER_10_144 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_10_188 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA_clkbuf_2_0_0_clk_A clkbuf_1_0_0_clk/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_70 VGND VPWR sky130_fd_sc_hd__fill_2
+X_418_ _420_/A _418_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_349_ _344_/Y _345_/Y _350_/A _348_/X _701_/D VGND VPWR sky130_fd_sc_hd__a2bb2o_4
+XFILLER_5_170 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_192 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_209 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_3_118 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_30_228 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__547__B2 _546_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__573__B x[18] VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__483__B1 _481_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_7 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_195 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_151 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_32 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_41 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_9_96 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__474__B1 _470_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_12_206 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_250 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__584__A _581_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_683_ _591_/X _683_/Q _386_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_34_93 VGND VPWR sky130_fd_sc_hd__decap_12
+XANTENNA__653__CLK _659_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__494__A _508_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__644__D _448_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_30_18 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_39_16 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_136 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_29_103 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_37_180 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__676__CLK _676_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__579__A _684_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_29_71 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__646__RESET_B _431_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_28_180 VGND VPWR sky130_fd_sc_hd__fill_2
+X_597_ _593_/Y _594_/Y _685_/Q _688_/Q _597_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+X_666_ _666_/D _514_/A _407_/X _669_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_6_97 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_18 VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_29 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_41_39 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__699__CLK _686_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__399__A _398_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_1_216 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_9_8 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_17_106 VGND VPWR sky130_fd_sc_hd__decap_3
+X_520_ _520_/A _518_/X _664_/D VGND VPWR sky130_fd_sc_hd__xor2_4
+XFILLER_25_172 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_25_161 VGND VPWR sky130_fd_sc_hd__fill_2
+X_382_ _381_/A _382_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_451_ _472_/A x[1] _451_/X VGND VPWR sky130_fd_sc_hd__and2_4
+XFILLER_15_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_73 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_17_139 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_40_186 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_50 VGND VPWR sky130_fd_sc_hd__fill_2
+Xclkbuf_3_3_0_clk clkbuf_3_3_0_clk/A _673_/CLK VGND VPWR sky130_fd_sc_hd__clkbuf_1
+X_649_ _468_/X _463_/A _427_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__491__B _489_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_142 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_22_164 VGND VPWR sky130_fd_sc_hd__fill_2
+X_503_ _499_/Y _500_/Y _499_/A _500_/A _505_/B VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_42_71 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_26_72 VGND VPWR sky130_fd_sc_hd__decap_3
+X_365_ _372_/A _366_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_13_120 VGND VPWR sky130_fd_sc_hd__fill_2
+X_434_ _366_/A _434_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__592__A _592_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__661__RESET_B _413_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_36_223 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__652__D _476_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_27_245 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_27_223 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_42_226 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_42_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_116 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_6_149 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_41 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__587__A y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_33_226 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_212 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_18_234 VGND VPWR sky130_fd_sc_hd__fill_2
+X_417_ _420_/A _417_/X VGND VPWR sky130_fd_sc_hd__buf_1
+X_348_ _344_/Y _345_/Y _701_/Q _704_/Q _348_/X VGND VPWR sky130_fd_sc_hd__o22a_4
+XFILLER_5_182 VGND VPWR sky130_fd_sc_hd__fill_1
+XANTENNA__647__D _461_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_24_215 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_23_51 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_163 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_130 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__483__B2 _482_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_44 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_77 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_9_53 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_207 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_21_218 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_28_29 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__474__A1 _470_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__474__B2 _471_/A VGND VPWR sky130_fd_sc_hd__diode_2
+X_682_ _682_/D _572_/A _387_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__584__B _582_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_34_83 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__494__B x[7] VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_38_159 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_38_137 VGND VPWR sky130_fd_sc_hd__decap_6
+XANTENNA__660__D _505_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_29_115 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_20_41 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_20_74 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__595__A _609_/A VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_35_118 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_35_107 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_29_83 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_28_170 VGND VPWR sky130_fd_sc_hd__fill_2
+X_665_ _526_/X _665_/Q _408_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+X_596_ _595_/X _596_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__686__RESET_B _382_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_6_32 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_6_43 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_6_54 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__655__D _490_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_26_129 VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_19 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_19_181 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_34_195 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_40_154 VGND VPWR sky130_fd_sc_hd__fill_2
+X_381_ _381_/A _381_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_25_184 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__356__B1 _354_/X VGND VPWR sky130_fd_sc_hd__diode_2
+X_450_ _450_/A _450_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XANTENNA__643__CLK _697_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_31_73 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_110 VGND VPWR sky130_fd_sc_hd__decap_6
+X_648_ _462_/X _450_/A _429_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_16_151 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_190 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+X_579_ _684_/Q _579_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+XFILLER_39_232 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_36_29 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__666__CLK _669_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_22_176 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_22_154 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__510__B1 _661_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+X_502_ _501_/X _502_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_26_84 VGND VPWR sky130_fd_sc_hd__fill_2
+X_433_ _430_/A _433_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_42_94 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_42_50 VGND VPWR sky130_fd_sc_hd__fill_1
+X_364_ _363_/A _364_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_13_165 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__592__B _590_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_22 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_11 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__689__CLK _692_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_3_99 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_66 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_3_55 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__568__B1 _677_/Q VGND VPWR sky130_fd_sc_hd__diode_2
+Xclkbuf_3_2_0_clk clkbuf_3_3_0_clk/A _659_/CLK VGND VPWR sky130_fd_sc_hd__clkbuf_1
+XFILLER_42_249 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_113 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_12_20 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_12_75 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_33_238 VGND VPWR sky130_fd_sc_hd__decap_6
+X_416_ _416_/A _420_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_347_ _347_/A _350_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_38_3 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_5_161 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__704__CLK _697_/CLK VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__663__D _663_/D VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__444__A2_N _438_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_15_205 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_15_238 VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_0_56 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_0_67 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_9_87 VGND VPWR sky130_fd_sc_hd__decap_3
+XANTENNA__658__D _498_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XANTENNA__474__A2 _471_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+X_681_ _681_/D _681_/Q _388_/X _686_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_34_40 VGND VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_245 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_38_149 VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA__461__A1_N _456_/Y VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_37_193 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_215 VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_4_204 VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_29_62 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_20_86 VGND VPWR sky130_fd_sc_hd__fill_2
+XANTENNA__595__B x[21] VGND VPWR sky130_fd_sc_hd__diode_2
+X_595_ _609_/A x[21] _595_/X VGND VPWR sky130_fd_sc_hd__and2_4
+X_664_ _664_/D _507_/A _409_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XANTENNA__655__RESET_B _420_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_6_88 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_3 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_34_174 VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA__671__D _547_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_40_144 VGND VPWR sky130_fd_sc_hd__fill_2
+X_380_ _381_/A _380_/X VGND VPWR sky130_fd_sc_hd__buf_1
+XANTENNA__356__B2 _355_/X VGND VPWR sky130_fd_sc_hd__diode_2
+XFILLER_0_240 VGND VPWR sky130_fd_sc_hd__fill_2
+X_578_ _681_/Q _578_/Y VGND VPWR sky130_fd_sc_hd__inv_8
+X_647_ _461_/X _456_/A _430_/X _663_/CLK VGND VPWR sky130_fd_sc_hd__dfrtp_4
+XFILLER_16_141 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_174 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_185 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_196 VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_31_177 VGND VPWR sky130_fd_sc_hd__fill_2
+XFILLER_31_144 VGND VPWR sky130_fd_sc_hd__fill_2
+XPHY_191 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_180 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_39_200 VGND VPWR sky130_fd_sc_hd__fill_2
+.ends
+
