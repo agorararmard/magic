@@ -62,10 +62,10 @@ close $fout
 
 puts stdout "\[INFO\]: COUNT: $count"
 puts stdout "\[INFO\]: Should be divided by 3 or 4"
-puts stdout "\[INFO\]: DRC Checking DONE ($::env(test_dir)/magic.drc)"
+puts stdout "\[INFO\]: DRC Checking DONE ($::env(test_dir)/drc1/magic.drc)"
 flush stdout
 
-puts stdout "\[INFO\]: Saving mag view with DRC errors($::env(test_dir)/magic.drc.mag)"
+puts stdout "\[INFO\]: Saving mag view with DRC errors($::env(test_dir)/drc1/magic.drc.mag)"
 # WARNING: changes the name of the cell; keep as last step
 save $::env(test_dir)/drc1/magic.drc.mag
 puts stdout "\[INFO\]: Saved"

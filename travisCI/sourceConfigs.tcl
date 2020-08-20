@@ -13,16 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $::env(MAGIC_ROOT)/travisCI/sourceConfigs.tcl
+set ::env(PDK) "sky130A"
+set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
-# the following MAGTYPE has to be maglef for the purpose of DRC checking
-set ::env(MAGTYPE) maglef
-exec mkdir $::env(test_dir)/drc1/
-puts "Running Magic DRC..."
-exec magic \
-    -noconsole \
-    -dnull \
-    -rcfile $::env(MAGIC_MAGICRC) \
-    $::env(MAGIC_ROOT)/travisCI/magic_drc1.tcl \
-    </dev/null \
-    |& tee $::env(TERMINAL_OUTPUT)
+set ::env(test_dir) /magic_root/testcases/designs/$::env(DESIGN)/test
+source $::env(test_dir)/config.tcl
+
+source $::env(PDK_ROOT)/$::env(PDK)/libs.tech/openlane/
+
+# source PDK and SCL specific configurations
+set pdk_config $::env(PDK_ROOT)/$::env(PDK)/libs.tech/openlane/config.tcl
+set scl_config $::env(PDK_ROOT)/$::env(PDK)/libs.tech/openlane/$::env(STD_CELL_LIBRARY)/config.tcl
+source $pdk_config
+source $scl_config
+
+set ::env(PDKPATH) "$::env(PDK_ROOT)/$::env(PDK)"
