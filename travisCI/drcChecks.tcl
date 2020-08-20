@@ -17,7 +17,12 @@ source $::env(MAGIC_ROOT)/travisCI/sourceConfigs.tcl
 
 # the following MAGTYPE has to be maglef for the purpose of DRC checking
 set ::env(MAGTYPE) maglef
-exec mkdir $::env(test_dir)/drc1/
+set ::env(OUT_DIR) $::env(test_dir)/drc1
+if { ![file isdirectory $::env(OUT_DIR)] } {
+	exec mkdir $::env(OUT_DIR)/
+}
+
+
 puts "Running Magic DRC..."
 exec magic \
     -noconsole \
@@ -25,4 +30,4 @@ exec magic \
     -rcfile $::env(MAGIC_MAGICRC) \
     $::env(MAGIC_ROOT)/travisCI/magic_drc1.tcl \
     </dev/null \
-    |& tee $::env(TERMINAL_OUTPUT)
+    |& tee $::env(OUT_DIR)/magic_drc.log
