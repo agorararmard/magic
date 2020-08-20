@@ -30,4 +30,4 @@ exec magic \
     -rcfile $::env(MAGIC_MAGICRC) \
     $::env(MAGIC_ROOT)/travisCI/magic_drc1.tcl \
     </dev/null \
-    |& tee $::env(OUT_DIR)/magic_drc.log
+    |& tee /dev/tty $::env(OUT_DIR)/magic_drc.log

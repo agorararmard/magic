@@ -52,10 +52,13 @@ feedback save $::env(OUT_DIR)/magic_extraction_feedback.txt
 	# the following MAGTYPE has to be maglef for the purpose of LVS
 	# otherwise underlying device circuits would be considered
 	set ::env(MAGTYPE) maglef
-	try_catch magic \
+	exec magic \
 		-noconsole \
 		-dnull \
 		-rcfile $::env(MAGIC_MAGICRC) \
 		$magic_export \
 		</dev/null \
-		|& tee $::env(OUT_DIR)/magic_spice.log
+		|& tee /dev/tty $::env(OUT_DIR)/magic_spice.log
+
+
+puts "Done!"

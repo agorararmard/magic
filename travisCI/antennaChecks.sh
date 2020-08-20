@@ -12,7 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
@@ -24,8 +23,6 @@ docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_
 TEST=$RUN_ROOT/testcases/designs/$DESIGN/test/antenna/magic.antenna_violators.rpt
 BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/benchmark/reports/magic.antenna_violators.rpt
 
-TEST_LOG=$RUN_ROOT/testcases/designs/$DESIGN/test/antenna/magic_antenna.log
-cat $TEST_LOG
 
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "antenna check failed"; exit -1; fi

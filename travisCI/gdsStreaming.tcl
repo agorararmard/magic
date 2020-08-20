@@ -32,5 +32,5 @@ exec magic \
     -rcfile $::env(MAGIC_MAGICRC) \
     $::env(MAGIC_ROOT)/travisCI/magic_gds_stream.tcl \
     </dev/null \
-    |& tee $::env(OUT_DIR)/magic.log
+    |& tee /dev/tty $::env(OUT_DIR)/magic.log
 

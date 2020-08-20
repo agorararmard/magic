@@ -54,13 +54,13 @@ antennacheck
 	# the following MAGTYPE has to be mag; antennacheck needs to know
 	# about the underlying devices, layers, etc.
 	set ::env(MAGTYPE) mag
-	try_catch magic \
+	exec magic \
 		-noconsole \
 		-dnull \
 		-rcfile $::env(MAGIC_MAGICRC) \
 		$magic_export \
 		</dev/null \
-		|& tee $::env(OUT_DIR)/magic_antenna.log
+		|& tee /dev/tty $::env(OUT_DIR)/magic_antenna.log
 
 	# process the log
 	exec awk "/Cell:/ {print \$2}" $::env(OUT_DIR)/magic_antenna.log \
