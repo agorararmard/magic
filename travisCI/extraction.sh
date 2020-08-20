@@ -26,7 +26,7 @@ BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/benchmark/results/$DESIGN.ext
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "Extraction failed"; exit -1; fi
 
-diff -s $TEST $BENCHMARK
+diff -q $TEST $BENCHMARK
 
 echo "[INFO]: Resulting Files:"
 ls $test_dir
