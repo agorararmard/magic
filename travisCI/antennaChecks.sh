@@ -17,13 +17,18 @@ export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
-docker run -it -v $RUN_ROOT:/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) openlane:rc3  bash -c "./flow.tcl -interactive -file /openLANE_flow/travisCI/antennaChecks.tcl"
+
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/antennaChecks.tcl"
 
 
-TEST=$RUN_ROOT/designs/$DESIGN/runs/config_magic_test/reports/magic/magic.antenna_violators.rpt
-BENCHMARK=$RUN_ROOT/designs/$DESIGN/runs/magic_benchmark/reports/magic/magic.antenna_violators.rpt
+TEST=$RUN_ROOT/testcases/designs/$DESIGN/test/antenna/magic.antenna_violators.rpt
+BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/benchmark/reports/magic.antenna_violators.rpt
+
+TEST_LOG=$RUN_ROOT/testcases/designs/$DESIGN/test/antenna/magic_antenna.log
+cat $TEST_LOG
+
 crashSignal=$(find $TEST)
-if ! [[ $crashSignal ]]; then exit -1; fi
+if ! [[ $crashSignal ]]; then echo "antenna check failed"; exit -1; fi
 
 
 test_antenna_violations=$(wc $TEST -l | cut -d ' ' -f 1)
@@ -31,6 +36,15 @@ if ! [[ $test_antenna_violations ]]; then test_antenna_violations=-1; fi
 
 benchmark_antenna_violations=$(wc $BENCHMARK -l | cut -d ' ' -f 1)
 if ! [[ $benchmark_antenna_violations ]]; then benchmark_antenna_violations=-1; fi
+
+echo "Extraction Feedback:"
+cat $RUN_ROOT/testcases/designs/$DESIGN/test/antenna/magic_ext2spice.antenna.feedback.txt
+
+echo "Test # of Antenna Violations:"
+echo $test_antenna_violations
+
+echo "Benchmark # of Antenna Violations:"
+echo $benchmark_antenna_violations
 
 
 if [ $benchmark_antenna_violations -ne $test_antenna_violations ]; then exit -1; fi

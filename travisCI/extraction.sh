@@ -17,12 +17,22 @@ export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
-docker run -it -v $RUN_ROOT:/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) openlane:rc3  bash -c "./flow.tcl -interactive -file /openLANE_flow//travisCI/extraction.tcl"
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/extraction.tcl"
 
-TEST=$RUN_ROOT/designs/$DESIGN/runs/config_magic_test/results/magic/$DESIGN.ext
-BENCHMARK=$RUN_ROOT/designs/$DESIGN/runs/magic_benchmark/results/magic/$DESIGN.ext
+test_dir=$RUN_ROOT/testcases/designs/$DESIGN/test/spice
+
+TEST=$test_dir/$DESIGN.ext
+BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/benchmark/results/$DESIGN.ext
+
+TEST_LOG=$test_dir/magic_spice.log
+cat $TEST_LOG
+
+echo "[INFO]: Resulting Files:"
+ls $test_dir
+
 crashSignal=$(find $TEST)
-if ! [[ $crashSignal ]]; then exit -1; fi
+if ! [[ $crashSignal ]]; then echo "Extraction failed"; exit -1; fi
+
 diff -s $TEST $BENCHMARK
 
 exit 0

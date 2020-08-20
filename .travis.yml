@@ -38,3 +38,5 @@ install:
 script:
   - bash travisCI/gdsStreaming.sh
   - bash travisCI/drcChecks.sh
+  - bash travisCI/extraction.sh
+  - bash travisCI/antennaChecks.sh
