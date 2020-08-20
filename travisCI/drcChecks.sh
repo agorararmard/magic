@@ -20,9 +20,16 @@ echo $RUN_ROOT
 docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/drcChecks.tcl"
 
 TEST=$RUN_ROOT/testcases/designs/$DESIGN/test/drc1/magic.drc
-BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/test/benchmark/reports/magic.drc
+BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/benchmark/reports/magic.drc
+
+
+TEST_LOG=$RUN_ROOT/testcases/designs/$DESIGN/test/drc1/magic_drc.log
+cat $TEST_LOG
+
 crashSignal=$(find $TEST)
-if ! [[ $crashSignal ]]; then exit -1; fi
+if ! [[ $crashSignal ]]; then echo "DRC Check FAILED"; exit -1; fi
+
+ 
 
 Test_Magic_violations=$(grep "^ [0-9]" $TEST | wc -l)
 if ! [[ $Test_Magic_violations ]]; then Test_Magic_violations=-1; fi

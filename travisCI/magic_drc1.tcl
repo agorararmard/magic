@@ -22,7 +22,7 @@ if {  [info exist ::env(EXTRA_LEFS)] } {
 }
 def read $::env(CURRENT_DEF)
 
-set fout [open $::env(test_dir)/drc1/magic.drc w]
+set fout [open $::env(OUT_DIR)/magic.drc w]
 set oscale [cif scale out]
 set cell_name $::env(DESIGN_NAME)
 magic::suspendall
@@ -62,12 +62,12 @@ close $fout
 
 puts stdout "\[INFO\]: COUNT: $count"
 puts stdout "\[INFO\]: Should be divided by 3 or 4"
-puts stdout "\[INFO\]: DRC Checking DONE ($::env(test_dir)/drc1/magic.drc)"
+puts stdout "\[INFO\]: DRC Checking DONE ($::env(OUT_DIR)/magic.drc)"
 flush stdout
 
-puts stdout "\[INFO\]: Saving mag view with DRC errors($::env(test_dir)/drc1/magic.drc.mag)"
+puts stdout "\[INFO\]: Saving mag view with DRC errors($::env(OUT_DIR)/magic.drc.mag)"
 # WARNING: changes the name of the cell; keep as last step
-save $::env(test_dir)/drc1/magic.drc.mag
+save $::env(OUT_DIR)/magic.drc.mag
 puts stdout "\[INFO\]: Saved"
 
 exit 0

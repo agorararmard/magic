@@ -20,12 +20,17 @@ puts "Streaming out GDS II..."
 # the following MAGTYPE better be mag for clean GDS generation
 # use load -dereference to ignore it later if needed
 set ::env(MAGTYPE) mag
-exec mkdir $::env(test_dir)/gds/
+
+set ::env(OUT_DIR)  $::env(test_dir)/gds
+
+if { ![file isdirectory $::env(OUT_DIR)] } {
+	exec mkdir $::env(OUT_DIR)/
+}
 exec magic \
     -noconsole \
     -dnull \
     -rcfile $::env(MAGIC_MAGICRC) \
     $::env(MAGIC_ROOT)/travisCI/magic_gds_stream.tcl \
     </dev/null \
-    |& tee $::env(TERMINAL_OUTPUT)
+    |& tee $::env(OUT_DIR)/magic.log
 

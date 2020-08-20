@@ -19,7 +19,6 @@ set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 set ::env(test_dir) /magic_root/testcases/designs/$::env(DESIGN)/test
 source $::env(test_dir)/config.tcl
 
-source $::env(PDK_ROOT)/$::env(PDK)/libs.tech/openlane/
 
 # source PDK and SCL specific configurations
 set pdk_config $::env(PDK_ROOT)/$::env(PDK)/libs.tech/openlane/config.tcl
