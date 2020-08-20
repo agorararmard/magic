@@ -1,5 +1,5 @@
 # General config
-set ::env(DESIGN_NAME) spm
+set ::env(DESIGN_NAME) $::env(DESIGN)
 set ::env(PDK) sky130A
 set ::env(STD_CELL_LIBRARY) sky130_fd_sc_hd
 set ::env(PDK_ROOT) $::env(PDK_ROOT)
