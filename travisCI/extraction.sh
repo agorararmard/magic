@@ -21,12 +21,10 @@ docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_
 test_dir=$RUN_ROOT/testcases/designs/$DESIGN/test/ext
 
 TEST=$test_dir/$DESIGN.ext
-BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/benchmark/results/$DESIGN.ext
 
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "Extraction failed"; exit -1; fi
 
-diff -q $TEST $BENCHMARK
 
 echo "[INFO]: Resulting Files:"
 ls $test_dir
