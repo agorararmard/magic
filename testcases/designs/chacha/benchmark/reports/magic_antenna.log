@@ -1,0 +1,598 @@
+
+Magic 8.3 revision 46 - Compiled on Sun Aug  2 14:52:31 UTC 2020.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style vendorimport: scaleFactor=2, multiplier=2
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/openLANE_flow/designs/chacha/runs/magic_vios//tmp//magic_antenna.tcl" from command line.
+Reading LEF data from file /home/aag/latest_openlane/pdks//sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef.
+This action cannot be undone.
+LEF read, Line 61 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 62 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 95 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 96 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 102 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 103 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 104 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 142 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 143 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 145 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 146 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 147 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 183 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 184 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 186 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 187 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 188 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 224 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 225 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 227 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 228 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 229 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 265 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 266 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 772 lines.
+Reading DEF data from file /openLANE_flow/designs/chacha/runs/magic_vios//results/routing/chacha.def.
+This action cannot be undone.
+  Processed 6 vias total.
+  Processed 201588 subcell instances total.
+  Processed 78 pins total.
+  Processed 2 special nets total.
+  Processed 19611 nets total.
+DEF read: Processed 822447 lines.
+Extracting sky130_fd_sc_hd__nand4_4 into sky130_fd_sc_hd__nand4_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__buf_8 into sky130_fd_sc_hd__buf_8.ext:
+Extracting sky130_fd_sc_hd__o32a_4 into sky130_fd_sc_hd__o32a_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__a22oi_4 into sky130_fd_sc_hd__a22oi_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__nand2_4 into sky130_fd_sc_hd__nand2_4.ext:
+Extracting sky130_fd_sc_hd__clkbuf_16 into sky130_fd_sc_hd__clkbuf_16.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__buf_4 into sky130_fd_sc_hd__buf_4.ext:
+Extracting sky130_fd_sc_hd__o41a_4 into sky130_fd_sc_hd__o41a_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__a2bb2oi_4 into sky130_fd_sc_hd__a2bb2oi_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__or4_4 into sky130_fd_sc_hd__or4_4.ext:
+Extracting sky130_fd_sc_hd__or3_4 into sky130_fd_sc_hd__or3_4.ext:
+Extracting sky130_fd_sc_hd__a21bo_4 into sky130_fd_sc_hd__a21bo_4.ext:
+Extracting sky130_fd_sc_hd__xnor2_4 into sky130_fd_sc_hd__xnor2_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__nor2_4 into sky130_fd_sc_hd__nor2_4.ext:
+Extracting sky130_fd_sc_hd__nor3_4 into sky130_fd_sc_hd__nor3_4.ext:
+Extracting sky130_fd_sc_hd__a2bb2o_4 into sky130_fd_sc_hd__a2bb2o_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__a32oi_4 into sky130_fd_sc_hd__a32oi_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__and4_4 into sky130_fd_sc_hd__and4_4.ext:
+Extracting sky130_fd_sc_hd__nor4_4 into sky130_fd_sc_hd__nor4_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__a2111oi_4 into sky130_fd_sc_hd__a2111oi_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
+Extracting sky130_fd_sc_hd__a32o_4 into sky130_fd_sc_hd__a32o_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__a21o_4 into sky130_fd_sc_hd__a21o_4.ext:
+Extracting sky130_fd_sc_hd__and3_4 into sky130_fd_sc_hd__and3_4.ext:
+Extracting sky130_fd_sc_hd__a211o_4 into sky130_fd_sc_hd__a211o_4.ext:
+Extracting sky130_fd_sc_hd__o22a_4 into sky130_fd_sc_hd__o22a_4.ext:
+Extracting sky130_fd_sc_hd__o21a_4 into sky130_fd_sc_hd__o21a_4.ext:
+Extracting sky130_fd_sc_hd__a21boi_4 into sky130_fd_sc_hd__a21boi_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__o21ai_4 into sky130_fd_sc_hd__o21ai_4.ext:
+Extracting sky130_fd_sc_hd__xor2_4 into sky130_fd_sc_hd__xor2_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__dfxtp_4 into sky130_fd_sc_hd__dfxtp_4.ext:
+Completed 100%
+Extracting sky130_fd_sc_hd__a21oi_4 into sky130_fd_sc_hd__a21oi_4.ext:
+Extracting sky130_fd_sc_hd__and2_4 into sky130_fd_sc_hd__and2_4.ext:
+Extracting sky130_fd_sc_hd__inv_8 into sky130_fd_sc_hd__inv_8.ext:
+Extracting sky130_fd_sc_hd__buf_1 into sky130_fd_sc_hd__buf_1.ext:
+Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
+sky130_fd_sc_hd__decap_8: 2 warnings
+Extracting sky130_fd_sc_hd__or2_4 into sky130_fd_sc_hd__or2_4.ext:
+Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting sky130_fd_sc_hd__diode_2 into sky130_fd_sc_hd__diode_2.ext:
+Extracting sky130_fd_sc_hd__decap_6 into sky130_fd_sc_hd__decap_6.ext:
+sky130_fd_sc_hd__decap_6: 2 warnings
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
+Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
+sky130_fd_sc_hd__decap_4: 2 warnings
+Extracting sky130_fd_sc_hd__decap_12 into sky130_fd_sc_hd__decap_12.ext:
+sky130_fd_sc_hd__decap_12: 2 warnings
+Extracting sky130_fd_sc_hd__decap_3 into sky130_fd_sc_hd__decap_3.ext:
+sky130_fd_sc_hd__decap_3: 2 warnings
+Extracting chacha into chacha.ext:
+Completed 5%
+Completed 10%
+Completed 15%
+Completed 20%
+Completed 25%
+Created database crash recovery file /tmp//MAG1063.yQ4KeL
+Completed 30%
+Completed 35%
+Completed 40%
+Completed 45%
+Completed 50%
+Completed 55%
+Completed 60%
+Completed 65%
+Completed 70%
+Completed 75%
+Completed 80%
+Completed 85%
+Completed 90%
+Completed 95%
+Completed 100%
+Total of 10 warnings.
+Reading extract file.
+Building flattened netlist.
+Running antenna checks.
+   100 gates analyzed.
+   200 gates analyzed.
+   300 gates analyzed.
+   400 gates analyzed.
+   500 gates analyzed.
+   600 gates analyzed.
+   700 gates analyzed.
+   800 gates analyzed.
+   900 gates analyzed.
+   1000 gates analyzed.
+   1100 gates analyzed.
+   1200 gates analyzed.
+   1300 gates analyzed.
+   1400 gates analyzed.
+   1500 gates analyzed.
+   1600 gates analyzed.
+   1700 gates analyzed.
+   1800 gates analyzed.
+   1900 gates analyzed.
+   2000 gates analyzed.
+   2100 gates analyzed.
+   2200 gates analyzed.
+   2300 gates analyzed.
+   2400 gates analyzed.
+   2500 gates analyzed.
+   2600 gates analyzed.
+   2700 gates analyzed.
+   2800 gates analyzed.
+   2900 gates analyzed.
+   3000 gates analyzed.
+   3100 gates analyzed.
+   3200 gates analyzed.
+   3300 gates analyzed.
+   3400 gates analyzed.
+   3500 gates analyzed.
+   3600 gates analyzed.
+   3700 gates analyzed.
+   3800 gates analyzed.
+   3900 gates analyzed.
+   4000 gates analyzed.
+   4100 gates analyzed.
+   4200 gates analyzed.
+   4300 gates analyzed.
+   4400 gates analyzed.
+   4500 gates analyzed.
+   4600 gates analyzed.
+   4700 gates analyzed.
+   4800 gates analyzed.
+   4900 gates analyzed.
+   5000 gates analyzed.
+   5100 gates analyzed.
+   5200 gates analyzed.
+   5300 gates analyzed.
+   5400 gates analyzed.
+   5500 gates analyzed.
+   5600 gates analyzed.
+   5700 gates analyzed.
+   5800 gates analyzed.
+   5900 gates analyzed.
+   6000 gates analyzed.
+   6100 gates analyzed.
+   6200 gates analyzed.
+   6300 gates analyzed.
+   6400 gates analyzed.
+   6500 gates analyzed.
+   6600 gates analyzed.
+   6700 gates analyzed.
+   6800 gates analyzed.
+   6900 gates analyzed.
+   7000 gates analyzed.
+   7100 gates analyzed.
+   7200 gates analyzed.
+   7300 gates analyzed.
+   7400 gates analyzed.
+   7500 gates analyzed.
+   7600 gates analyzed.
+   7700 gates analyzed.
+   7800 gates analyzed.
+   7900 gates analyzed.
+   8000 gates analyzed.
+   8100 gates analyzed.
+   8200 gates analyzed.
+   8300 gates analyzed.
+   8400 gates analyzed.
+   8500 gates analyzed.
+   8600 gates analyzed.
+   8700 gates analyzed.
+   8800 gates analyzed.
+   8900 gates analyzed.
+   9000 gates analyzed.
+   9100 gates analyzed.
+   9200 gates analyzed.
+   9300 gates analyzed.
+   9400 gates analyzed.
+   9500 gates analyzed.
+   9600 gates analyzed.
+   9700 gates analyzed.
+   9800 gates analyzed.
+   9900 gates analyzed.
+   10000 gates analyzed.
+   10100 gates analyzed.
+   10200 gates analyzed.
+   10300 gates analyzed.
+   10400 gates analyzed.
+   10500 gates analyzed.
+   10600 gates analyzed.
+   10700 gates analyzed.
+   10800 gates analyzed.
+   10900 gates analyzed.
+   11000 gates analyzed.
+   11100 gates analyzed.
+   11200 gates analyzed.
+   11300 gates analyzed.
+   11400 gates analyzed.
+   11500 gates analyzed.
+   11600 gates analyzed.
+   11700 gates analyzed.
+   11800 gates analyzed.
+   11900 gates analyzed.
+   12000 gates analyzed.
+   12100 gates analyzed.
+   12200 gates analyzed.
+   12300 gates analyzed.
+   12400 gates analyzed.
+   12500 gates analyzed.
+   12600 gates analyzed.
+   12700 gates analyzed.
+   12800 gates analyzed.
+   12900 gates analyzed.
+   13000 gates analyzed.
+   13100 gates analyzed.
+   13200 gates analyzed.
+   13300 gates analyzed.
+   13400 gates analyzed.
+   13500 gates analyzed.
+   13600 gates analyzed.
+   13700 gates analyzed.
+   13800 gates analyzed.
+   13900 gates analyzed.
+   14000 gates analyzed.
+   14100 gates analyzed.
+   14200 gates analyzed.
+   14300 gates analyzed.
+   14400 gates analyzed.
+   14500 gates analyzed.
+   14600 gates analyzed.
+   14700 gates analyzed.
+   14800 gates analyzed.
+   14900 gates analyzed.
+   15000 gates analyzed.
+   15100 gates analyzed.
+   15200 gates analyzed.
+   15300 gates analyzed.
+   15400 gates analyzed.
+   15500 gates analyzed.
+   15600 gates analyzed.
+   15700 gates analyzed.
+   15800 gates analyzed.
+   15900 gates analyzed.
+   16000 gates analyzed.
+   16100 gates analyzed.
+   16200 gates analyzed.
+   16300 gates analyzed.
+   16400 gates analyzed.
+   16500 gates analyzed.
+   16600 gates analyzed.
+   16700 gates analyzed.
+   16800 gates analyzed.
+   16900 gates analyzed.
+   17000 gates analyzed.
+   17100 gates analyzed.
+   17200 gates analyzed.
+   17300 gates analyzed.
+   17400 gates analyzed.
+   17500 gates analyzed.
+   17600 gates analyzed.
+   17700 gates analyzed.
+   17800 gates analyzed.
+   17900 gates analyzed.
+   18000 gates analyzed.
+   18100 gates analyzed.
+   18200 gates analyzed.
+   18300 gates analyzed.
+   18400 gates analyzed.
+   18500 gates analyzed.
+   18600 gates analyzed.
+   18700 gates analyzed.
+   18800 gates analyzed.
+   18900 gates analyzed.
+   19000 gates analyzed.
+   19100 gates analyzed.
+   19200 gates analyzed.
+   19300 gates analyzed.
+   19400 gates analyzed.
+   19500 gates analyzed.
+   19600 gates analyzed.
+   19700 gates analyzed.
+   19800 gates analyzed.
+   19900 gates analyzed.
+   20000 gates analyzed.
+   20100 gates analyzed.
+   20200 gates analyzed.
+   20300 gates analyzed.
+   20400 gates analyzed.
+   20500 gates analyzed.
+   20600 gates analyzed.
+   20700 gates analyzed.
+   20800 gates analyzed.
+   20900 gates analyzed.
+   21000 gates analyzed.
+   21100 gates analyzed.
+   21200 gates analyzed.
+   21300 gates analyzed.
+   21400 gates analyzed.
+   21500 gates analyzed.
+   21600 gates analyzed.
+   21700 gates analyzed.
+   21800 gates analyzed.
+   21900 gates analyzed.
+   22000 gates analyzed.
+   22100 gates analyzed.
+   22200 gates analyzed.
+   22300 gates analyzed.
+   22400 gates analyzed.
+   22500 gates analyzed.
+   22600 gates analyzed.
+   22700 gates analyzed.
+   22800 gates analyzed.
+   22900 gates analyzed.
+   23000 gates analyzed.
+   23100 gates analyzed.
+   23200 gates analyzed.
+   23300 gates analyzed.
+   23400 gates analyzed.
+   23500 gates analyzed.
+   23600 gates analyzed.
+   23700 gates analyzed.
+   23800 gates analyzed.
+   23900 gates analyzed.
+   24000 gates analyzed.
+   24100 gates analyzed.
+   24200 gates analyzed.
+   24300 gates analyzed.
+   24400 gates analyzed.
+   24500 gates analyzed.
+   24600 gates analyzed.
+   24700 gates analyzed.
+   24800 gates analyzed.
+   24900 gates analyzed.
+   25000 gates analyzed.
+   25100 gates analyzed.
+   25200 gates analyzed.
+   25300 gates analyzed.
+   25400 gates analyzed.
+   25500 gates analyzed.
+   25600 gates analyzed.
+   25700 gates analyzed.
+   25800 gates analyzed.
+   25900 gates analyzed.
+   26000 gates analyzed.
+   26100 gates analyzed.
+   26200 gates analyzed.
+   26300 gates analyzed.
+   26400 gates analyzed.
+   26500 gates analyzed.
+   26600 gates analyzed.
+   26700 gates analyzed.
+   26800 gates analyzed.
+   26900 gates analyzed.
+   27000 gates analyzed.
+   27100 gates analyzed.
+   27200 gates analyzed.
+   27300 gates analyzed.
+   27400 gates analyzed.
+   27500 gates analyzed.
+   27600 gates analyzed.
+   27700 gates analyzed.
+   27800 gates analyzed.
+   27900 gates analyzed.
+   28000 gates analyzed.
+   28100 gates analyzed.
+   28200 gates analyzed.
+   28300 gates analyzed.
+   28400 gates analyzed.
+   28500 gates analyzed.
+   28600 gates analyzed.
+   28700 gates analyzed.
+   28800 gates analyzed.
+   28900 gates analyzed.
+   29000 gates analyzed.
+   29100 gates analyzed.
+   29200 gates analyzed.
+   29300 gates analyzed.
+   29400 gates analyzed.
+   29500 gates analyzed.
+   29600 gates analyzed.
+   29700 gates analyzed.
+   29800 gates analyzed.
+   29900 gates analyzed.
+   30000 gates analyzed.
+   30100 gates analyzed.
+   30200 gates analyzed.
+   30300 gates analyzed.
+   30400 gates analyzed.
+   30500 gates analyzed.
+   30600 gates analyzed.
+   30700 gates analyzed.
+   30800 gates analyzed.
+   30900 gates analyzed.
+   31000 gates analyzed.
+   31100 gates analyzed.
+   31200 gates analyzed.
+   31300 gates analyzed.
+   31400 gates analyzed.
+   31500 gates analyzed.
+   31600 gates analyzed.
+   31700 gates analyzed.
+   31800 gates analyzed.
+   31900 gates analyzed.
+   32000 gates analyzed.
+   32100 gates analyzed.
+   32200 gates analyzed.
+   32300 gates analyzed.
+   32400 gates analyzed.
+   32500 gates analyzed.
+   32600 gates analyzed.
+   32700 gates analyzed.
+   32800 gates analyzed.
+   32900 gates analyzed.
+   33000 gates analyzed.
+   33100 gates analyzed.
+   33200 gates analyzed.
+   33300 gates analyzed.
+   33400 gates analyzed.
+   33500 gates analyzed.
+   33600 gates analyzed.
+   33700 gates analyzed.
+   33800 gates analyzed.
+   33900 gates analyzed.
+   34000 gates analyzed.
+   34100 gates analyzed.
+   34200 gates analyzed.
+   34300 gates analyzed.
+   34400 gates analyzed.
+   34500 gates analyzed.
+   34600 gates analyzed.
+   34700 gates analyzed.
+   34800 gates analyzed.
+   34900 gates analyzed.
+   35000 gates analyzed.
+   35100 gates analyzed.
+   35200 gates analyzed.
+   35300 gates analyzed.
+   35400 gates analyzed.
+   35500 gates analyzed.
+   35600 gates analyzed.
+   35700 gates analyzed.
+   35800 gates analyzed.
+   35900 gates analyzed.
+   36000 gates analyzed.
+   36100 gates analyzed.
+   36200 gates analyzed.
+   36300 gates analyzed.
+   36400 gates analyzed.
+   36500 gates analyzed.
+   36600 gates analyzed.
+   36700 gates analyzed.
+   36800 gates analyzed.
+   36900 gates analyzed.
+   37000 gates analyzed.
+   37100 gates analyzed.
+   37200 gates analyzed.
+   37300 gates analyzed.
+   37400 gates analyzed.
+   37500 gates analyzed.
+   37600 gates analyzed.
+   37700 gates analyzed.
+   37800 gates analyzed.
+   37900 gates analyzed.
+   38000 gates analyzed.
+   38100 gates analyzed.
+   38200 gates analyzed.
+   38300 gates analyzed.
+   38400 gates analyzed.
+   38500 gates analyzed.
+   38600 gates analyzed.
+   38700 gates analyzed.
+   38800 gates analyzed.
+   38900 gates analyzed.
+   39000 gates analyzed.
+   39100 gates analyzed.
+   39200 gates analyzed.
+   39300 gates analyzed.
+   39400 gates analyzed.
+   39500 gates analyzed.
+   39600 gates analyzed.
+   39700 gates analyzed.
+   39800 gates analyzed.
+   39900 gates analyzed.
+   40000 gates analyzed.
+   40100 gates analyzed.
+   40200 gates analyzed.
+   40300 gates analyzed.
+   40400 gates analyzed.
+   40500 gates analyzed.
+   40600 gates analyzed.
+   40700 gates analyzed.
+   40800 gates analyzed.
+   40900 gates analyzed.
+   41000 gates analyzed.
+   41100 gates analyzed.
+   41200 gates analyzed.
+   41300 gates analyzed.
+   41400 gates analyzed.
+   41500 gates analyzed.
+   41600 gates analyzed.
+   41700 gates analyzed.
+   41800 gates analyzed.
+   41900 gates analyzed.
+   42000 gates analyzed.
+   42100 gates analyzed.
+   42200 gates analyzed.
+   42300 gates analyzed.
+   42400 gates analyzed.
+   42500 gates analyzed.
+   42600 gates analyzed.
+   42700 gates analyzed.
+   42800 gates analyzed.
+   42900 gates analyzed.
+   43000 gates analyzed.
+   43100 gates analyzed.
+   43200 gates analyzed.
+   43300 gates analyzed.
+   43400 gates analyzed.
+   43500 gates analyzed.
+   43600 gates analyzed.
+   43700 gates analyzed.
+   43800 gates analyzed.
+   43900 gates analyzed.
+   44000 gates analyzed.
+   44100 gates analyzed.
+   44200 gates analyzed.
+   44300 gates analyzed.
+   44400 gates analyzed.
+   44500 gates analyzed.
+   44600 gates analyzed.
+   44700 gates analyzed.
+   44800 gates analyzed.
+   44900 gates analyzed.
+   45000 gates analyzed.
+   45100 gates analyzed.
+   45200 gates analyzed.
+   45300 gates analyzed.
+   45400 gates analyzed.
+   45500 gates analyzed.
+   45600 gates analyzed.
+   45700 gates analyzed.
+   45800 gates analyzed.
+antennacheck finished.
+Using technology "sky130A", version 20200508

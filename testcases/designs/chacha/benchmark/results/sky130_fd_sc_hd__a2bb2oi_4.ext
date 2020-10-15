@@ -1,0 +1,105 @@
+timestamp 1597414872
+version 8.3
+tech sky130A
+style ngspice(lvs)
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+abstract
+port "VGND" 6 0 -48 1932 48 m1
+port "VPWR" 7 0 496 1932 592 m1
+port "VGND" 6 0 -17 1932 17 li
+port "VGND" 6 35 17 69 179 li
+port "VGND" 6 203 17 237 111 li
+port "VGND" 6 707 17 741 111 li
+port "VGND" 6 875 17 909 111 li
+port "VGND" 6 1043 17 1181 111 li
+port "VGND" 6 1315 17 1349 111 li
+port "VGND" 6 1483 17 1517 111 li
+port "VGND" 6 1651 17 1685 111 li
+port "VGND" 6 1819 17 1853 111 li
+port "A2_N" 2 1519 215 1809 255 li
+port "A1_N" 1 1189 215 1464 255 li
+port "B2" 4 345 215 615 255 li
+port "B1" 3 20 215 311 257 li
+port "B1" 3 277 257 311 289 li
+port "B1" 3 277 289 715 323 li
+port "B1" 3 649 215 715 289 li
+port "Y" 5 355 129 599 145 li
+port "Y" 5 355 145 1009 181 li
+port "Y" 5 749 181 783 283 li
+port "Y" 5 749 283 993 323 li
+port "Y" 5 775 55 841 145 li
+port "Y" 5 783 323 833 425 li
+port "Y" 5 943 55 1009 145 li
+port "Y" 5 949 323 993 425 li
+port "VPWR" 7 0 527 1932 561 li
+port "VPWR" 7 119 359 161 527 li
+port "VPWR" 7 279 427 329 527 li
+port "VPWR" 7 447 427 497 527 li
+port "VPWR" 7 615 427 665 527 li
+port "VPWR" 7 1231 359 1273 527 li
+port "VPWR" 7 1391 359 1441 527 li
+node "VGND" 3 817.028 0 -48 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 185472 4056 0 0 0 0 0 0 0 0 0 0
+node "VPWR" 3 845.397 0 496 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 185472 4056 0 0 0 0 0 0 0 0 0 0
+node "li_103_51#" 0 0 103 51 obsli 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VGND" 925 1682.55 1819 17 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 106540 5760 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+equiv "VGND" "VGND"
+node "A2_N" 88 192.23 1519 215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11600 660 0 0 0 0 0 0 0 0 0 0 0 0
+node "A1_N" 84 183.425 1189 215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11000 630 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_817_215#" 0 0 817 215 obsli 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1131_291#" 0 0 1131 291 obsli 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "B2" 82 180.49 345 215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 620 0 0 0 0 0 0 0 0 0 0 0 0
+node "B1" 259 512.955 649 215 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33086 1754 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "B1" "B1"
+equiv "B1" "B1"
+equiv "B1" "B1"
+node "Y" 383 850.583 949 323 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62144 2884 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+node "li_17_291#" 0 0 17 291 obsli 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VPWR" 882 1618.96 1391 359 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103200 5540 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+equiv "VPWR" "VPWR"
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "A2_N" "VGND" 53.4551
+cap "B2" "Y" 262.204
+cap "Y" "VGND" 582.54
+cap "B2" "VGND" 45
+cap "VPWR" "VPWR" 987.682
+cap "VPWR" "A1_N" 51.3945
+cap "A1_N" "A2_N" 24
+cap "VGND" "VGND" 1046.48
+cap "A1_N" "VGND" 50.9551
+cap "VPWR" "B1" 134.05
+cap "VPWR" "A2_N" 35.1838
+cap "VPWR" "Y" 137.782
+cap "VPWR" "B2" 36.2842
+cap "VPWR" "VGND" 16.154
+cap "B1" "Y" 258.716
+cap "B1" "B2" 339.706
+cap "B1" "VGND" 132.334
+subcap "VGND" -236.274
+subcap "VPWR" -250.008
+subcap "A2_N" -196.633
+subcap "A1_N" -48.568
+subcap "VPWR" -371.253
+subcap "VGND" -1223.38
+subcap "A1_N" -134.857
+subcap "VPWR" -1267.44

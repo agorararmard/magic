@@ -30,6 +30,8 @@ jobs:
       env: DESIGN=usb_cdc_core
     - name: "xtea Test"
       env: DESIGN=xtea       
+    - name: "chacha Test"
+      env: DESIGN=chacha       
       
 install:
   - sh build-docker.sh
