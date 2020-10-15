@@ -1115,6 +1115,7 @@ cmdPortLabelFunc2(scx, label, tpath, cdata)
 /* Find a label in the cell editDef.					*/
 /*									*/
 /* If "port" is true, then search only for labels that are ports.	*/
+/*    If false, then search only for labels that are not ports.		*/
 /* If "unique" is true, then return a label only if exactly one label	*/
 /* is found in the edit box.						*/
 /*----------------------------------------------------------------------*/
@@ -1123,10 +1124,10 @@ Label *
 portFindLabel(editDef, port, unique, nonEdit)
     CellDef *editDef;
     bool unique;
-    bool port;
+    bool port;		// If TRUE, only look for labels that are ports
     bool *nonEdit;	// TRUE if label is not in the edit cell
 {
-    int found;
+    int found, wrongkind;
     Label *lab, *sl;
     Rect editBox;
 
@@ -1138,10 +1139,19 @@ portFindLabel(editDef, port, unique, nonEdit)
 
     ToolGetEditBox(&editBox);
     found = 0;
+    wrongkind = FALSE;
     if (nonEdit) *nonEdit = FALSE;
     lab = NULL;
     for (sl = editDef->cd_labels; sl != NULL; sl = sl->lab_next)
     {
+	/* Ignore labels based on whether label is or is not a port */
+	if (((port == TRUE) && !(sl->lab_flags & PORT_DIR_MASK)) ||
+		    ((port == FALSE) && (sl->lab_flags & PORT_DIR_MASK)))
+	{
+	    wrongkind = TRUE;	/* Found at least one label of the wrong kind */
+	    continue;
+	}
+
 	if (GEO_OVERLAP(&editBox, &sl->lab_rect) ||
 			GEO_SURROUND(&editBox, &sl->lab_rect))
 	{
@@ -1167,11 +1177,13 @@ portFindLabel(editDef, port, unique, nonEdit)
 	    if (nonEdit) *nonEdit = FALSE;
 	}
     }
+    if ((found == 0) && (wrongkind == TRUE)) return NULL;
 
     /* If no label was found, then search the hierarchy under the box.	*/
     /* The calling routine may determine whether a label that is not in	*/
     /* the edit cell may be valid for the command (e.g., if querying	*/
-    /* but not changing values).					*/
+    /* but not changing values).  NOTE:  Currently this does not apply	*/
+    /* the "port" option.						*/
 
     if (found == 0)
     {
@@ -1205,7 +1217,8 @@ portFindLabel(editDef, port, unique, nonEdit)
  * qsort() callback routine used by CmdPort when renumbering ports.
  * Simply do a string comparison on the two labels.  There is no special
  * meaning to the lexigraphic ordering;  it is meant only to enforce a
- * consistent and repeatable port order.
+ * consistent and repeatable port order.  However, note that since SPICE
+ * is case-insensitive, case-insensitive string comparison is used.
  *
  * ----------------------------------------------------------------------------
  */
@@ -1215,7 +1228,7 @@ complabel(const void *one, const void *two)
 {
     Label *l1 = *((Label **)one);
     Label *l2 = *((Label **)two);
-    return strcmp(l1->lab_text, l2->lab_text);
+    return strcasecmp(l1->lab_text, l2->lab_text);
 }
 
 /*
@@ -1267,13 +1280,15 @@ complabel(const void *one, const void *two)
 #define PORT_EQUIV	4
 #define PORT_EXISTS	5
 #define PORT_CONNECT	6
-#define PORT_LAST	7
-#define PORT_MAKE	8
-#define PORT_MAKEALL	9
-#define PORT_NAME	10
-#define PORT_REMOVE	11
-#define PORT_RENUMBER	12
-#define PORT_HELP	13
+#define PORT_FIRST	7
+#define PORT_NEXT	8
+#define PORT_LAST	9
+#define PORT_MAKE	10
+#define PORT_MAKEALL	11
+#define PORT_NAME	12
+#define PORT_REMOVE	13
+#define PORT_RENUMBER	14
+#define PORT_HELP	15
 
 void
 CmdPort(w, cmd)
@@ -1282,7 +1297,7 @@ CmdPort(w, cmd)
 {
     char **msg;
     int argstart;
-    int i, idx, pos, type, option, argc;
+    int i, refidx, idx, pos, type, option, argc;
     unsigned short dirmask;
     bool found;
     bool nonEdit = FALSE;
@@ -1299,6 +1314,8 @@ CmdPort(w, cmd)
 	"equivalent [number]	make port equivalent to another port",
 	"exists			report if a label is a port or not",
 	"connections [dir...]	get [set] port connection directions",
+	"first			report the lowest port number used",
+	"next [number]		report the next port number used",
 	"last			report the highest port number used",
 	"make [index] [dir...]	turn a label into a port",
 	"makeall [index] [dir]	turn all labels into ports",
@@ -1402,7 +1419,7 @@ CmdPort(w, cmd)
 			if (sl && ((sl->lab_flags & PORT_DIR_MASK) != 0))
 			    if ((sl->lab_flags & PORT_NUM_MASK) == portidx)
 			    {
-				lab = sl;
+			    	lab = sl;
 				break;
 			    }
 		}
@@ -1414,7 +1431,8 @@ CmdPort(w, cmd)
 			if (!strcmp(portname, sl->lab_text))
 			{
 			    lab = sl;
-			    break;
+			    if (sl && ((sl->lab_flags & PORT_DIR_MASK) != 0))
+			    	break;
 			}
 		}
 		if (lab == NULL)
@@ -1440,10 +1458,15 @@ CmdPort(w, cmd)
     {
 	/* Check for options that require only one selected port */
 
-	if (option != PORT_LAST)
+	if (option != PORT_LAST && option != PORT_FIRST)
 	{
 	    if (lab == NULL)
-		lab = portFindLabel(editDef, TRUE, TRUE, &nonEdit);
+	    {
+		if (option == PORT_MAKE)
+		    lab = portFindLabel(editDef, FALSE, TRUE, &nonEdit);
+		else
+		    lab = portFindLabel(editDef, TRUE, TRUE, &nonEdit);
+	    }
 
 	    if (option == PORT_EXISTS)
 	    {
@@ -1461,10 +1484,10 @@ CmdPort(w, cmd)
 #endif
 		return;
 	    }
-
 	}
-	if ((option != PORT_LAST) && (option != PORT_MAKEALL)
-		&& (option != PORT_RENUMBER) && (lab == NULL))
+	if ((option != PORT_LAST) && (option != PORT_FIRST) &&
+		(option != PORT_MAKEALL) && (option != PORT_RENUMBER)
+		&& (lab == NULL))
 	{
 	    /* Let "port remove" fail without complaining. */
 	    if (option != PORT_REMOVE)
@@ -1480,7 +1503,7 @@ CmdPort(w, cmd)
 
 	if ((option != PORT_MAKE) && (option != PORT_MAKEALL)
 		&& (option != PORT_EXISTS) && (option != PORT_RENUMBER)
-		&& (option != PORT_LAST))
+		&& (option != PORT_LAST) && (option != PORT_FIRST))
 	{
 	    /* label "lab" must already be a port */
 	    if (!(lab->lab_flags & PORT_DIR_MASK))
@@ -1517,6 +1540,44 @@ CmdPort(w, cmd)
 		Tcl_SetObjResult(magicinterp, Tcl_NewIntObj(i));
 #else
 		TxPrintf("%d\n", i);
+#endif
+		break;
+
+	    case PORT_FIRST:
+		i = PORT_NUM_MASK + 1;
+		for (sl = editDef->cd_labels; sl != NULL; sl = sl->lab_next)
+		{
+		    if (sl->lab_flags & PORT_DIR_MASK)
+		    {
+		    	idx = sl->lab_flags & PORT_NUM_MASK;
+		    	if (idx < i) i = idx;
+		    }
+		}
+		if (i == PORT_NUM_MASK + 1) i = -1;
+#ifdef MAGIC_WRAPPER
+		Tcl_SetObjResult(magicinterp, Tcl_NewIntObj(i));
+#else
+		TxPrintf("%d\n", i);
+#endif
+		break;
+
+	    case PORT_NEXT:
+		refidx = lab->lab_flags & PORT_NUM_MASK;
+		i = PORT_NUM_MASK + 1;
+		for (sl = editDef->cd_labels; sl != NULL; sl = sl->lab_next)
+		{
+		    if (sl->lab_flags & PORT_DIR_MASK)
+		    {
+		    	idx = sl->lab_flags & PORT_NUM_MASK;
+		    	if (idx > refidx)
+		            if (idx < i) i = idx;
+		    }
+		}
+		if (i == PORT_NUM_MASK + 1) i = -1;
+#ifdef MAGIC_WRAPPER
+		Tcl_SetObjResult(magicinterp, Tcl_NewIntObj(i));
+#else
+		TxPrintf("Index = %d\n", i);
 #endif
 		break;
 
@@ -1763,7 +1824,9 @@ CmdPort(w, cmd)
 
 	    case PORT_RENUMBER:
 		/* Renumber ports in canonical order (by alphabetical
-		 * order of the label text).
+		 * order of the label text).  NOTE:  Because SPICE is
+		 * case-insensitive, case-insensitive alphabetical order
+		 * is used.
 		 */
 		{
 		    int numlabels, n, p;

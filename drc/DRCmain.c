@@ -37,6 +37,7 @@ static char rcsid[] __attribute__ ((unused)) = "$Header: /usr/cvsroot/magic-8.0/
 #include "windows/windows.h"
 #include "dbwind/dbwind.h"
 #include "drc/drc.h"
+#include "cif/cif.h"
 #include "utils/undo.h"
 
 /* The global variables defined below are parameters between
@@ -201,7 +202,10 @@ drcSubstitute (cptr)
     why_out = (char *)mallocMagic(whylen * sizeof(char));
     strcpy(why_out, whyptr);
 
-    oscale = CIFGetOutputScale(1000);	/* 1000 for conversion to um */
+    if (cptr->drcc_flags & DRC_CIFRULE)
+	oscale = CIFGetScale(100);	/* 100 = microns to centimicrons */
+    else
+	oscale = CIFGetOutputScale(1000);   /* 1000 for conversion to um */
     wptr = why_out;
 
     while ((sptr = strchr(whyptr, '%')) != NULL)
