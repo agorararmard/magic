@@ -17,9 +17,28 @@ export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/drcChecks.tcl"
+export MAGIC_MAGICRC=$PDKPATH/sky130A.magicrc
+export test_dir=/magic_root/testcases/designs/$DESIGN/test
+export OUT_DIR=$test_dir/drc1
 
-TEST=$RUN_ROOT/testcases/designs/$DESIGN/test/drc1/magic.drc
+if ! [[ -d "$OUT_DIR" ]]
+then
+    mkdir $OUT_DIR
+fi
+
+docker run -it -v $RUN_ROOT:/magic_root \
+    -v $PDK_ROOT:$PDK_ROOT -v $TARGET_DIR:$TARGET_DIR \
+    -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN \
+    -u $(id -u $USER):$(id -g $USER) \
+    magic:latest sh -c "magic \
+        -noconsole \
+        -dnull \
+        -rcfile $MAGIC_MAGICRC \
+        /magic_root/travisCI/magic_drc.tcl \
+        </dev/null \
+        |& tee $OUT_DIR/magic_drc.log"
+
+TEST=$OUT_DIR/magic.drc
 BENCHMARK=$RUN_ROOT/testcases/designs/$DESIGN/benchmark/reports/magic.drc
 
 

@@ -11,20 +11,22 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+set ::env(MAGTYPE) maglef
+source $::env(test_dir)/config.tcl
 
-lef read $::env(TECH_LEF)
-#load $::env(magic_result_file_tag).mag
-if {  [info exist ::env(EXTRA_LEFS)] } {
-	set lefs_in $::env(EXTRA_LEFS)
-	foreach lef_file $lefs_in {
-		lef read $lef_file
+if { $::env(TARGET_TYPE) == "gds"} {
+	gds read $::env(TARGET_DIR)/$::env(DESIGN_NAME).gds
+} else {
+	if { $::env(TARGET_TYPE) == "mag" } {
+		load $::env(TARGET_DIR)/$::env(DESIGN_NAME).mag
+	} else {
+		def read $::env(TARGET_DIR)/$::env(DESIGN_NAME).def
 	}
 }
-def read $::env(CURRENT_DEF)
 
 set fout [open $::env(OUT_DIR)/magic.drc w]
 set oscale [cif scale out]
-set cell_name $::env(DESIGN_NAME)
+set cell_name $::env(DESIGN)
 magic::suspendall
 puts stdout "\[INFO\]: Loading $cell_name\n"
 flush stdout

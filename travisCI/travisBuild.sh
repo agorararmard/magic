@@ -21,14 +21,25 @@ cd  $PDK_ROOT
 rm -rf skywater-pdk
 git clone https://github.com/google/skywater-pdk.git skywater-pdk
 cd skywater-pdk
-git checkout -qf 3f310bcc264df0194b9f7e65b83c59759bb27480
+git checkout -qf d8e2cf1ba006ed01468aa60e7f4e85a1ece74ca4
 git submodule update --init libraries/$STD_CELL_LIBRARY/latest
-make $STD_CELL_LIBRARY
+cnt=0
+until make $STD_CELL_LIBRARY; do
+cnt=$((cnt+1))
+if [ $cnt -eq 5 ]; then
+	exit 2
+fi
+rm -rf skywater-pdk
+git clone https://github.com/google/skywater-pdk.git skywater-pdk
+cd skywater-pdk
+git checkout -qf d8e2cf1ba006ed01468aa60e7f4e85a1ece74ca4
+git submodule update --init libraries/$STD_CELL_LIBRARY/latest
+done
 cd $PDK_ROOT
 rm -rf open_pdks
 git clone https://github.com/RTimothyEdwards/open_pdks.git open_pdks
 cd open_pdks
-git checkout -qf 60b4f62aabff2e4fd9df194b6db59e61a2bd2472
+git checkout -qf 94513d439f76501eacb39701f6e98f3b4f07dcdf
 docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) magic:latest  bash -c "sh ./travisCI/buildPDK.sh"
 echo "done installing"
 cd $RUN_ROOT

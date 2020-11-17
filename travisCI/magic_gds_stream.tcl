@@ -12,6 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+set ::env(MAGIC_PAD) 0
+set ::env(MAGIC_ZEROIZE_ORIGIN) 1
+set ::env(MAGTYPE) mag
+source $::env(test_dir)/config.tcl
+
 drc off
 
 lef read $::env(TECH_LEF)
@@ -68,13 +73,14 @@ select top cell
 
 # Write gds
 cif *hier write disable
-#gds write $::env(DESIGN_NAME).gds
+#gds write $::env(DESIGN).gds
 gds write $::env(OUT_DIR)/$::env(DESIGN).gds
 puts "\[INFO\]: GDS Write Complete"
 
 puts "\[INFO\]: Saving .mag view With BBox Values: [box values]"
 # WARNING: changes the name of the cell; keep as last step
 save $::env(OUT_DIR)/$::env(DESIGN).mag
-
+# Attempt to read the gds again
+gds read $::env(OUT_DIR)/$::env(DESIGN).gds
 puts "\[INFO\]: MAGIC TAPEOUT STEP DONE"
 exit 0
