@@ -20,6 +20,8 @@ if { $::env(TARGET_TYPE) == "gds"} {
 	if { $::env(TARGET_TYPE) == "mag" } {
 		load $::env(TARGET_DIR)/$::env(DESIGN_NAME).mag
 	} else {
+		set ::env(TECH_LEF) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/$::env(STD_CELL_LIBRARY).tlef"
+		lef read $::env(TECH_LEF)
 		def read $::env(TARGET_DIR)/$::env(DESIGN_NAME).def
 	}
 }

@@ -16,6 +16,7 @@ set ::env(MAGIC_PAD) 0
 set ::env(MAGIC_ZEROIZE_ORIGIN) 1
 set ::env(MAGTYPE) mag
 source $::env(test_dir)/config.tcl
+set ::env(TECH_LEF) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/$::env(STD_CELL_LIBRARY).tlef"
 
 drc off
 

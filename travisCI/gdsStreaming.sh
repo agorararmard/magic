@@ -27,8 +27,9 @@ then
 fi
 
 docker run -it -v $RUN_ROOT:/magic_root \
-    -v $PDK_ROOT:$PDK_ROOT -v $TARGET_DIR:$TARGET_DIR \
-    -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN \
+    -v $PDK_ROOT:$PDK_ROOT -v $test_dir:$test_dir \
+    -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -e test_dir=$test_dir \
+    -e OUT_DIR=$test_dir/drc1 \
     -u $(id -u $USER):$(id -g $USER) \
     magic:latest sh -c "magic \
         -noconsole \
