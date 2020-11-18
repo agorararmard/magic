@@ -19,7 +19,7 @@ echo $RUN_ROOT
 
 export MAGIC_MAGICRC=$PDKPATH/sky130A.magicrc
 export test_dir=/magic_root/testcases/designs/$DESIGN/test
-export OUT_DIR=$test_dir/drc1
+export OUT_DIR=$RUN_ROOT/testcases/designs/$DESIGN/test/gds
 
 if ! [[ -d "$OUT_DIR" ]]
 then
@@ -38,7 +38,7 @@ docker run -it -v $RUN_ROOT:/magic_root \
         </dev/null \
         |& tee $OUT_DIR/magic_drc.log"
 
-TEST=$test_dir/gds/$DESIGN.gds
+TEST=$OUT_DIR/$DESIGN.gds
 
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "GDS streaming failed."; exit -1; fi

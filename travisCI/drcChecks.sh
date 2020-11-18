@@ -19,7 +19,7 @@ echo $PDK_ROOT
 echo $RUN_ROOT
 export MAGIC_MAGICRC=$PDKPATH/sky130A.magicrc
 export test_dir=/magic_root/testcases/designs/$DESIGN/test
-export OUT_DIR=$test_dir/drc1
+export OUT_DIR=$RUN_ROOT/testcases/designs/$DESIGN/test/drc1
 
 if ! [[ -d "$OUT_DIR" ]]
 then
