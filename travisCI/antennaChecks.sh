@@ -17,7 +17,10 @@ export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
 
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/antennaChecks.tcl"
+export MAGIC_MAGICRC=$PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc
+export test_dir=/magic_root/testcases/designs/$DESIGN/test
+
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/antennaChecks.tcl"
 
 
 TEST=$RUN_ROOT/testcases/designs/$DESIGN/test/antenna/magic.antenna_violators.rpt

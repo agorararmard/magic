@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+puts "Performing GDS Streaming Out..."
 set ::env(MAGIC_PAD) 0
 set ::env(MAGIC_ZEROIZE_ORIGIN) 1
 set ::env(MAGTYPE) mag
@@ -30,7 +31,7 @@ if {  [info exist ::env(EXTRA_LEFS)] } {
 }
 
 # Read def and load design
-def read $::env(TARGET_DIR)/$::env(DESIGN_NAME).def
+def read $::env(test_dir)/$::env(DESIGN).def
 
 gds readonly true
 gds rescale false
@@ -42,7 +43,7 @@ if {  [info exist ::env(EXTRA_GDS_FILES)] } {
 }
 
 
-load $::env(DESIGN_NAME)
+load $::env(DESIGN)
 select top cell
 
 # padding

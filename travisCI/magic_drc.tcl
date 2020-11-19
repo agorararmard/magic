@@ -11,18 +11,20 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+puts "Performing DRC Checks..."
 set ::env(MAGTYPE) maglef
 source $::env(test_dir)/config.tcl
 
 if { $::env(TARGET_TYPE) == "gds"} {
-	gds read $::env(TARGET_DIR)/$::env(DESIGN_NAME).gds
+	gds read $::env(test_dir)/$::env(DESIGN).gds
 } else {
 	if { $::env(TARGET_TYPE) == "mag" } {
-		load $::env(TARGET_DIR)/$::env(DESIGN_NAME).mag
+		load $::env(test_dir)/$::env(DESIGN).mag
 	} else {
 		set ::env(TECH_LEF) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/$::env(STD_CELL_LIBRARY).tlef"
 		lef read $::env(TECH_LEF)
-		def read $::env(TARGET_DIR)/$::env(DESIGN_NAME).def
+		def read $::env(test_dir)/$::env(DESIGN).def
 	}
 }
 

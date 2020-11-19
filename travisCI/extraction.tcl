@@ -30,10 +30,10 @@ set commands \
 "
 
 if { $::env(TARGET_TYPE) == "gds"} {
-	gds read $::env(TARGET_DIR)/$::env(DESIGN_NAME).gds
+	gds read $::env(test_dir)/$::env(DESIGN).gds
 } else {
 	if { $::env(TARGET_TYPE) == "mag" } {
-		load $::env(TARGET_DIR)/$::env(DESIGN_NAME).mag
+		load $::env(test_dir)/$::env(DESIGN).mag
 	} else {
 		lef read $::env(TECH_LEF)
 		if {  \[info exist ::env(EXTRA_LEFS)\] } {
@@ -42,17 +42,17 @@ if { $::env(TARGET_TYPE) == "gds"} {
 				lef read \$lef_file
 			}
 		}
-		def read  $::env(TARGET_DIR)/$::env(DESIGN_NAME).def
+		def read  $::env(test_dir)/$::env(DESIGN).def
 	}
 }
 
-load $::env(DESIGN_NAME) -dereference
+load $::env(DESIGN) -dereference
 cd $::env(OUT_DIR)/
 extract do local
 # extract warn all
 extract
 ext2spice lvs
-ext2spice $::env(DESIGN_NAME).ext
+ext2spice $::env(DESIGN).ext
 feedback save $::env(OUT_DIR)/magic_extraction_feedback.txt
 "
 	set magic_export_file [open $magic_export w]
