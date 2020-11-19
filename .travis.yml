@@ -32,6 +32,7 @@ jobs:
 install:
   - sh build-docker.sh
   - sh .travisCI/travisBuild.sh
+  - sh .travisCI/uncompress_all.sh
     
 script:
   - bash .travisCI/gdsStreaming.sh
