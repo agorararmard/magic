@@ -24,13 +24,17 @@ jobs:
   include:
     - name: "spm Test"
       env: DESIGN=spm 
+    - name: "usb_cdc_core Test"
+      env: DESIGN=usb_cdc_core
+    - name: "xtea Test"
+      env: DESIGN=xtea
       
 install:
   - sh build-docker.sh
-  - sh travisCI/travisBuild.sh
+  - sh .travisCI/travisBuild.sh
     
 script:
-  - bash travisCI/gdsStreaming.sh
-  - bash travisCI/drcChecks.sh
-  - bash travisCI/extraction.sh
-  - bash travisCI/antennaChecks.sh
+  - bash .travisCI/gdsStreaming.sh
+  - bash .travisCI/drcChecks.sh
+  - bash .travisCI/extraction.sh
+  - bash .travisCI/antennaChecks.sh
