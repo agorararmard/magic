@@ -40,7 +40,7 @@ rm -rf open_pdks
 git clone https://github.com/RTimothyEdwards/open_pdks.git open_pdks
 cd open_pdks
 git checkout -qf 94513d439f76501eacb39701f6e98f3b4f07dcdf
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) magic:latest  bash -c "sh ./travisCI/buildPDK.sh"
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) magic:latest  bash -c "sh ./.travisCI/buildPDK.sh"
 echo "done installing"
 cd $RUN_ROOT
 exit 0

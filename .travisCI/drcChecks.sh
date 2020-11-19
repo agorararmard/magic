@@ -35,7 +35,7 @@ docker run -it -v $RUN_ROOT:/magic_root \
         -noconsole \
         -dnull \
         -rcfile $MAGIC_MAGICRC \
-        /magic_root/travisCI/magic_drc.tcl \
+        /magic_root/.travisCI/magic_drc.tcl \
         </dev/null \
         |& tee $OUT_DIR/magic_drc.log"
 

@@ -18,7 +18,7 @@ echo $PDK_ROOT
 echo $RUN_ROOT
 export test_dir=/magic_root/.travisCI/testcases/designs/$DESIGN/test
 
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/extraction.tcl"
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./.travisCI/extraction.tcl"
 
 
 TEST=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/test/ext/$DESIGN.ext
