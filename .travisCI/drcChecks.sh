@@ -40,7 +40,7 @@ docker run -it -v $RUN_ROOT:/magic_root \
         |& tee $OUT_DIR/magic_drc.log"
 
 TEST=$OUT_DIR/magic.drc
-BENCHMARK=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/benchmark/reports/magic.drc
+BENCHMARK=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/benchmark/magic.drc
 
 
 

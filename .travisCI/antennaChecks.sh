@@ -24,7 +24,7 @@ docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e test_dir=$test
 
 
 TEST=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/test/antenna/magic.antenna_violators.rpt
-BENCHMARK=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/benchmark/reports/magic.antenna_violators.rpt
+BENCHMARK=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/benchmark/magic.antenna_violators.rpt
 
 
 crashSignal=$(find $TEST)

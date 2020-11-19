@@ -26,10 +26,10 @@ if { ![file isdirectory $::env(OUT_DIR)] } {
 set magic_export $::env(OUT_DIR)/magic_antenna.tcl
 set commands \
 "
-if { $::env(TARGET_TYPE) == \"gds\"} {
+if { \$::env(TARGET_TYPE) == \"gds\"} {
 	gds read $::env(test_dir)/$::env(DESIGN).gds
 } else {
-	if { $::env(TARGET_TYPE) == \"mag\" } {
+	if { \$::env(TARGET_TYPE) == \"mag\" } {
 		load $::env(test_dir)/$::env(DESIGN).mag
 	} else {
 		lef read $::env(TECH_LEF)

@@ -28,7 +28,7 @@ fi
 
 docker run -it -v $RUN_ROOT:/magic_root \
     -v $PDK_ROOT:$PDK_ROOT \
-    -e PDK_ROOT=$PDK_ROOT -e DESIGN_NAME=$DESIGN -e test_dir=$test_dir \
+    -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -e test_dir=$test_dir \
     -e OUT_DIR=$test_dir/drc1 \
     -u $(id -u $USER):$(id -g $USER) \
     magic:latest sh -c "magic \
