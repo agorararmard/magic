@@ -16,11 +16,12 @@ export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/extraction.tcl"
+export test_dir=/magic_root/testcases/designs/$DESIGN/test/ext
 
-test_dir=$RUN_ROOT/testcases/designs/$DESIGN/test/ext
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e test_dir=$test_dir -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./travisCI/extraction.tcl"
 
-TEST=$test_dir/$DESIGN.ext
+
+TEST=$RUN_ROOT/testcases/designs/$DESIGN/test/ext/$DESIGN.ext
 
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "Extraction failed"; exit -1; fi

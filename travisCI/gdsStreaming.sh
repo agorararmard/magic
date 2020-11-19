@@ -17,7 +17,7 @@ export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
 
-export MAGIC_MAGICRC=$PDKPATH/sky130A.magicrc
+export MAGIC_MAGICRC=$PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc
 export test_dir=/magic_root/testcases/designs/$DESIGN/test
 export OUT_DIR=$RUN_ROOT/testcases/designs/$DESIGN/test/gds
 

@@ -30,7 +30,7 @@ if {  [info exist ::env(EXTRA_LEFS)] } {
 }
 
 # Read def and load design
-def read $::env(CURRENT_DEF)
+def read $::env(TARGET_DIR)/$::env(DESIGN_NAME).def
 
 gds readonly true
 gds rescale false

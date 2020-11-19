@@ -15,9 +15,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $::env(MAGIC_ROOT)/travisCI/sourceConfigs.tcl
-
 puts "Performing Spice Extractions..."
+source $::env(test_dir)/config.tcl
+set ::env(TECH_LEF) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/$::env(STD_CELL_LIBRARY).tlef"
 
 set ::env(OUT_DIR)  $::env(test_dir)/ext
 
@@ -28,14 +28,24 @@ if { ![file isdirectory $::env(OUT_DIR)] } {
 set magic_export $::env(OUT_DIR)/magic_spice.tcl
 set commands \
 "
-lef read $::env(TECH_LEF)
-if {  \[info exist ::env(EXTRA_LEFS)\] } {
-	set lefs_in \$::env(EXTRA_LEFS)
-	foreach lef_file \$lefs_in {
-		lef read \$lef_file
+
+if { $::env(TARGET_TYPE) == "gds"} {
+	gds read $::env(TARGET_DIR)/$::env(DESIGN_NAME).gds
+} else {
+	if { $::env(TARGET_TYPE) == "mag" } {
+		load $::env(TARGET_DIR)/$::env(DESIGN_NAME).mag
+	} else {
+		lef read $::env(TECH_LEF)
+		if {  \[info exist ::env(EXTRA_LEFS)\] } {
+			set lefs_in \$::env(EXTRA_LEFS)
+			foreach lef_file \$lefs_in {
+				lef read \$lef_file
+			}
+		}
+		def read  $::env(TARGET_DIR)/$::env(DESIGN_NAME).def
 	}
 }
-def read $::env(CURRENT_DEF)
+
 load $::env(DESIGN_NAME) -dereference
 cd $::env(OUT_DIR)/
 extract do local
