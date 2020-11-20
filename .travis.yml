@@ -17,34 +17,33 @@ language: minimal
 services:
     - docker
 
-os: 
+os:
   - linux
 
 jobs:
   include:
     - name: "spm Test"
       env: DESIGN=spm PDK=sky130A
-      script: 
+      script:
         - bash .travisCI/testScripts/gdsStreaming.sh
         - bash .travisCI/testScripts/drcChecks.sh
         - bash .travisCI/testScripts/extraction.sh
         - bash .travisCI/testScripts/antennaChecks.sh
     - name: "usb_cdc_core Test"
       env: DESIGN=usb_cdc_core PDK=sky130A
-      script: 
+      script:
         - bash .travisCI/testScripts/gdsStreaming.sh
         - bash .travisCI/testScripts/drcChecks.sh
         - bash .travisCI/testScripts/extraction.sh
         - bash .travisCI/testScripts/antennaChecks.sh
     - name: "xtea Test"
       env: DESIGN=xtea PDK=sky130A
-      script: 
+      script:
         - bash .travisCI/testScripts/gdsStreaming.sh
         - bash .travisCI/testScripts/drcChecks.sh
         - bash .travisCI/testScripts/extraction.sh
         - bash .travisCI/testScripts/antennaChecks.sh
 
-      
 install:
   - sh build-docker.sh
   - sh .travisCI/buildScripts/travisBuild.sh

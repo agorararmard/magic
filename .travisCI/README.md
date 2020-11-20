@@ -95,14 +95,14 @@ This utilizes 2 scripts: [interface and setup bash script][3] and [tcl script fo
 
 The script can operate on DEF, GDS, or MAG. Thus one of them must be present in the test directory. The script needs a previous benchmark DRC result to be present in the benchmark directory.
 
-It needs to be `STD_CELL_LIBRARY` and `TARGET_TYPE` through the `config.tcl` of the test case. Check the How to Add More Test Cases section for more about that. 
+It needs to be `STD_CELL_LIBRARY` and `TARGET_TYPE` through the `config.tcl` of the test case. Check the How to Add More Test Cases section for more about that.
 
 Passing factors: The number of violations is the same as the one in the benchmark.
 
 ### GDS Streaming Out:
 This utilizes 2 scripts: [interface and setup bash script][5] and [tcl script for running DRC][6].
 
-The script can operate on DEF, GDS, or MAG. Thus one of them must be present in the test directory. 
+The script can operate on DEF, GDS, or MAG. Thus one of them must be present in the test directory.
 
 It needs to be `STD_CELL_LIBRARY` and `TARGET_TYPE` through the `config.tcl` of the test case. Check the How to Add More Test Cases section for more about that.
 
@@ -113,7 +113,7 @@ This utilizes 2 scripts: [interface and setup bash script][7] and [tcl script fo
 
 The script can operate on DEF, GDS, or MAG. Thus one of them must be present in the test directory. The script needs a previous benchmark Antenna checks result to be present in the benchmark directory.
 
-It needs to be `STD_CELL_LIBRARY` and `TARGET_TYPE` through the `config.tcl` of the test case. Check the How to Add More Test Cases section for more about that. 
+It needs to be `STD_CELL_LIBRARY` and `TARGET_TYPE` through the `config.tcl` of the test case. Check the How to Add More Test Cases section for more about that.
 
 Passing factors: The number of violations is the same as the one in the benchmark.
 
@@ -123,7 +123,7 @@ Passing factors: The number of violations is the same as the one in the benchmar
 
 `TARGET_TYPE`: the type of the file you want to run the operations on. This could be auto detected later.. Current possible values: `gds`, `mag`, and `def`.
 
-Here you can find 
+[Here][9] you can find a sample config.
 
 
 [0]: .testScripts/gdsStreaming.sh

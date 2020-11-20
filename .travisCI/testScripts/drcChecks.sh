@@ -50,7 +50,6 @@ BENCHMARK=$RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/benchmark/magic.drc
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "DRC Check FAILED"; exit -1; fi
 
- 
 
 Test_Magic_violations=$(grep "^ [0-9]" $TEST | wc -l)
 if ! [[ $Test_Magic_violations ]]; then Test_Magic_violations=-1; fi
