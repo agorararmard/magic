@@ -71,16 +71,15 @@ if { $::env(MAGIC_ZEROIZE_ORIGIN) } {
 	property FIXED_BBOX [box values]
 }
 
+puts "\[INFO\]: Saving .mag view With BBox Values: [box values]"
+cellname filepath $::env(DESIGN) $::env(OUT_DIR)
+save
+
 select top cell
 
 # Write gds
 cif *hier write disable
-#gds write $::env(DESIGN).gds
 gds write $::env(OUT_DIR)/$::env(DESIGN).gds
 puts "\[INFO\]: GDS Write Complete"
-
-puts "\[INFO\]: Saving .mag view With BBox Values: [box values]"
-# WARNING: changes the name of the cell; keep as last step
-save $::env(OUT_DIR)/$::env(DESIGN).mag
 puts "\[INFO\]: MAGIC TAPEOUT STEP DONE"
 exit 0

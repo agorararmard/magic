@@ -25,27 +25,27 @@ jobs:
     - name: "spm Test"
       env: DESIGN=spm PDK=sky130A
       script: 
-        - bash .travisCI/gdsStreaming.sh
-        - bash .travisCI/drcChecks.sh
-        - bash .travisCI/extraction.sh
-        - bash .travisCI/antennaChecks.sh
+        - bash .travisCI/testScripts/gdsStreaming.sh
+        - bash .travisCI/testScripts/drcChecks.sh
+        - bash .travisCI/testScripts/extraction.sh
+        - bash .travisCI/testScripts/antennaChecks.sh
     - name: "usb_cdc_core Test"
       env: DESIGN=usb_cdc_core PDK=sky130A
       script: 
-        - bash .travisCI/gdsStreaming.sh
-        - bash .travisCI/drcChecks.sh
-        - bash .travisCI/extraction.sh
-        - bash .travisCI/antennaChecks.sh
+        - bash .travisCI/testScripts/gdsStreaming.sh
+        - bash .travisCI/testScripts/drcChecks.sh
+        - bash .travisCI/testScripts/extraction.sh
+        - bash .travisCI/testScripts/antennaChecks.sh
     - name: "xtea Test"
       env: DESIGN=xtea PDK=sky130A
       script: 
-        - bash .travisCI/gdsStreaming.sh
-        - bash .travisCI/drcChecks.sh
-        - bash .travisCI/extraction.sh
-        - bash .travisCI/antennaChecks.sh
+        - bash .travisCI/testScripts/gdsStreaming.sh
+        - bash .travisCI/testScripts/drcChecks.sh
+        - bash .travisCI/testScripts/extraction.sh
+        - bash .travisCI/testScripts/antennaChecks.sh
 
       
 install:
   - sh build-docker.sh
-  - sh .travisCI/travisBuild.sh
-  - sh .travisCI/uncompress_all.sh
+  - sh .travisCI/buildScripts/travisBuild.sh
+  - sh .travisCI/buildScripts/uncompress_all.sh

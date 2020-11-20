@@ -12,6 +12,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+# exit when any command fails
+set -e
+
 export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
@@ -20,7 +24,7 @@ echo $RUN_ROOT
 export MAGIC_MAGICRC=$PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc
 export test_dir=/magic_root/.travisCI/testcases/$PDK/designs/$DESIGN/test
 
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK=$PDK -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./.travisCI/antennaChecks.tcl"
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK=$PDK -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./.travisCI/testScripts/antennaChecks.tcl"
 
 
 TEST=$RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/test/antenna/magic.antenna_violators.rpt

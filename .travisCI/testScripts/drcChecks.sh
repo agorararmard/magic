@@ -13,6 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# exit when any command fails
+set -e
+
 export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
@@ -35,7 +38,7 @@ docker run -it -v $RUN_ROOT:/magic_root \
         -noconsole \
         -dnull \
         -rcfile $MAGIC_MAGICRC \
-        /magic_root/.travisCI/magic_drc.tcl \
+        /magic_root/.travisCI/testScripts/magic_drc.tcl \
         </dev/null \
         |& tee $OUT_DIR/magic_drc.log"
 

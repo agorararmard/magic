@@ -12,6 +12,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+# exit when any command fails
+set -e
+
 export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
@@ -35,11 +39,24 @@ docker run -it -v $RUN_ROOT:/magic_root \
         -noconsole \
         -dnull \
         -rcfile $MAGIC_MAGICRC \
-        /magic_root/.travisCI/magic_gds_stream.tcl \
+        /magic_root/.travisCI/testScripts/magic_gds_stream.tcl \
         </dev/null \
-        |& tee $OUT_DIR/magic_drc.log"
+        |& tee $OUT_DIR/magic_gds_stream.log"
 
 TEST=$OUT_DIR/$DESIGN.gds
+
+docker run -it -v $RUN_ROOT:/magic_root \
+    -v $PDK_ROOT:$PDK_ROOT -e PDK=$PDK \
+    -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -e test_dir=$test_dir \
+    -e OUT_DIR=$test_dir/gds \
+    -u $(id -u $USER):$(id -g $USER) \
+    magic:latest sh -c "magic \
+        -noconsole \
+        -dnull \
+        -rcfile $MAGIC_MAGICRC \
+        /magic_root/.travisCI/testScripts/gds_read.tcl \
+        </dev/null \
+        |& tee $OUT_DIR/magic_gds_read.log"
 
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "GDS streaming failed."; exit -1; fi
