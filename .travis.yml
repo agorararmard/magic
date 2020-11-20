@@ -43,6 +43,20 @@ jobs:
         - bash .travisCI/testScripts/drcChecks.sh
         - bash .travisCI/testScripts/extraction.sh
         - bash .travisCI/testScripts/antennaChecks.sh
+    - name: "APU Test"
+      env: DESIGN=APU PDK=sky130A
+      script:
+        - bash .travisCI/testScripts/gdsStreaming.sh
+        - bash .travisCI/testScripts/drcChecks.sh
+        - bash .travisCI/testScripts/extraction.sh
+        - bash .travisCI/testScripts/antennaChecks.sh
+    - name: "usb Test"
+      env: DESIGN=usb PDK=sky130A
+      script:
+        - bash .travisCI/testScripts/gdsStreaming.sh
+        - bash .travisCI/testScripts/drcChecks.sh
+        - bash .travisCI/testScripts/extraction.sh
+        - bash .travisCI/testScripts/antennaChecks.sh
 
 install:
   - sh build-docker.sh

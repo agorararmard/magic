@@ -22,22 +22,15 @@ set ::env(TECH_LEF) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRA
 drc off
 
 
-if { $::env(TARGET_TYPE) == "gds"} {
-	gds read $::env(test_dir)/$::env(DESIGN).gds
-} else {
-	if { $::env(TARGET_TYPE) == "mag" } {
-		load $::env(test_dir)/$::env(DESIGN).mag
-	} else {
-		lef read $::env(TECH_LEF)
-		if {  [info exist ::env(EXTRA_LEFS)] } {
-			set lefs_in $::env(EXTRA_LEFS)
-			foreach lef_file $lefs_in {
-				lef read $lef_file
-			}
-		}
-		def read  $::env(test_dir)/$::env(DESIGN).def
+lef read $::env(TECH_LEF)
+if {  [info exist ::env(EXTRA_LEFS)] } {
+	set lefs_in $::env(EXTRA_LEFS)
+	foreach lef_file $lefs_in {
+		lef read $lef_file
 	}
 }
+def read  $::env(test_dir)/$::env(DESIGN).def
+
 
 gds readonly true
 gds rescale false

@@ -86,7 +86,7 @@ docker run -it -v $RUN_ROOT:/magic_root \
 ### GDS Streaming Out:
 This utilizes 3 scripts: [interface and setup bash script][0], [tcl for writing GDS-II][1], and [tcl for reading GDS-II][2].
 
-The script can operate on DEF, GDS, or MAG. Thus one of them must be present in the test directory. It also needs to be provided `STD_CELL_LIBRARY` through the `config.tcl` of the test case. Check the How to Add More Test Cases section for more about that.
+The script requires a DEF file to be present in the test directory. Thus one of them must be present in the test directory. It also needs to be provided `STD_CELL_LIBRARY` through the `config.tcl` of the test case. Check the How to Add More Test Cases section for more about that.
 
 Passing factors: The GDS-II is there and magic was able to read it.
 
