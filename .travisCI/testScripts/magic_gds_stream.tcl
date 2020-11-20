@@ -88,4 +88,3 @@ cif *hier write disable
 gds write $::env(OUT_DIR)/$::env(DESIGN).gds
 puts "\[INFO\]: GDS Write Complete"
 puts "\[INFO\]: MAGIC TAPEOUT STEP DONE"
-exit 0

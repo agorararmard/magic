@@ -13,8 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# exit when any command fails
-set -e
 
 export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)

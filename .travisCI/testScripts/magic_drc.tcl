@@ -76,5 +76,3 @@ puts stdout "\[INFO\]: Saving mag view with DRC errors($::env(OUT_DIR)/magic.drc
 # WARNING: changes the name of the cell; keep as last step
 save $::env(OUT_DIR)/magic.drc.mag
 puts stdout "\[INFO\]: Saved"
-
-exit 0
