@@ -18,13 +18,13 @@ echo $PDK_ROOT
 echo $RUN_ROOT
 
 export MAGIC_MAGICRC=$PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc
-export test_dir=/magic_root/.travisCI/testcases/designs/$DESIGN/test
+export test_dir=/magic_root/.travisCI/testcases/$PDK/designs/$DESIGN/test
 
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./.travisCI/antennaChecks.tcl"
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK=$PDK -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./.travisCI/antennaChecks.tcl"
 
 
-TEST=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/test/antenna/magic.antenna_violators.rpt
-BENCHMARK=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/benchmark/magic.antenna_violators.rpt
+TEST=$RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/test/antenna/magic.antenna_violators.rpt
+BENCHMARK=$RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/benchmark/magic.antenna_violators.rpt
 
 
 crashSignal=$(find $TEST)
@@ -38,7 +38,7 @@ benchmark_antenna_violations=$(wc $BENCHMARK -l | cut -d ' ' -f 1)
 if ! [[ $benchmark_antenna_violations ]]; then benchmark_antenna_violations=-1; fi
 
 echo "Extraction Feedback:"
-cat $RUN_ROOT/.travisCI/testcases/designs/$DESIGN/test/antenna/magic_ext2spice.antenna.feedback.txt
+cat $RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/test/antenna/magic_ext2spice.antenna.feedback.txt
 
 echo "Test # of Antenna Violations:"
 echo $test_antenna_violations

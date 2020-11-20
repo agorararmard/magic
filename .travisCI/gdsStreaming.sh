@@ -18,8 +18,8 @@ echo $PDK_ROOT
 echo $RUN_ROOT
 
 export MAGIC_MAGICRC=$PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc
-export test_dir=/magic_root/.travisCI/testcases/designs/$DESIGN/test
-export OUT_DIR=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/test/gds
+export test_dir=/magic_root/.travisCI/testcases/$PDK/designs/$DESIGN/test
+export OUT_DIR=$RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/test/gds
 
 if ! [[ -d "$OUT_DIR" ]]
 then
@@ -27,9 +27,9 @@ then
 fi
 
 docker run -it -v $RUN_ROOT:/magic_root \
-    -v $PDK_ROOT:$PDK_ROOT \
+    -v $PDK_ROOT:$PDK_ROOT -e PDK=$PDK \
     -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -e test_dir=$test_dir \
-    -e OUT_DIR=$test_dir/drc1 \
+    -e OUT_DIR=$test_dir/gds \
     -u $(id -u $USER):$(id -g $USER) \
     magic:latest sh -c "magic \
         -noconsole \

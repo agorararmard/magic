@@ -82,7 +82,5 @@ puts "\[INFO\]: GDS Write Complete"
 puts "\[INFO\]: Saving .mag view With BBox Values: [box values]"
 # WARNING: changes the name of the cell; keep as last step
 save $::env(OUT_DIR)/$::env(DESIGN).mag
-# Attempt to read the gds again
-gds read $::env(OUT_DIR)/$::env(DESIGN).gds
 puts "\[INFO\]: MAGIC TAPEOUT STEP DONE"
 exit 0

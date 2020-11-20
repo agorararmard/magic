@@ -15,6 +15,7 @@
 puts "Performing DRC Checks..."
 set ::env(MAGTYPE) maglef
 source $::env(test_dir)/config.tcl
+set ::env(TECH_LEF) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/$::env(STD_CELL_LIBRARY).tlef"
 
 if { $::env(TARGET_TYPE) == "gds"} {
 	gds read $::env(test_dir)/$::env(DESIGN).gds

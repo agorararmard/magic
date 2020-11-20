@@ -49,6 +49,10 @@ if { \$::env(TARGET_TYPE) == \"gds\"} {
 load \$::env(DESIGN) -dereference
 cd \$::env(OUT_DIR)/
 extract do local
+extract no capacitance
+extract no coupling
+extract no resistance
+extract no adjust
 # extract warn all
 extract
 ext2spice lvs

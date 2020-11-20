@@ -16,19 +16,20 @@ export PDK_ROOT=$(pwd)/pdks
 export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
-export test_dir=/magic_root/.travisCI/testcases/designs/$DESIGN/test
+export test_dir=/magic_root/.travisCI/testcases/$PDK/designs/$DESIGN/test
+export MAGIC_MAGICRC=$PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc
 
-docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./.travisCI/extraction.tcl"
+docker run -it -v $RUN_ROOT:/magic_root -v $PDK_ROOT:$PDK_ROOT -e PDK=$PDK -e test_dir=$test_dir -e MAGIC_MAGICRC=$MAGIC_MAGICRC -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -u $(id -u $USER):$(id -g $USER) magic:latest bash -c "tclsh ./.travisCI/extraction.tcl"
 
 
-TEST=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/test/ext/$DESIGN.ext
+TEST=$RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/test/ext/$DESIGN.ext
 
 crashSignal=$(find $TEST)
 if ! [[ $crashSignal ]]; then echo "Extraction failed"; exit -1; fi
 
 
 echo "[INFO]: Resulting Files:"
-ls $test_dir
+ls $RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/test/ext/
 
 
 exit 0

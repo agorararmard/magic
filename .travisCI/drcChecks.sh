@@ -18,8 +18,8 @@ export RUN_ROOT=$(pwd)
 echo $PDK_ROOT
 echo $RUN_ROOT
 export MAGIC_MAGICRC=$PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc
-export test_dir=/magic_root/.travisCI/testcases/designs/$DESIGN/test
-export OUT_DIR=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/test/drc1
+export test_dir=/magic_root/.travisCI/testcases/$PDK/designs/$DESIGN/test
+export OUT_DIR=$RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/test/drc1
 
 if ! [[ -d "$OUT_DIR" ]]
 then
@@ -27,7 +27,7 @@ then
 fi
 
 docker run -it -v $RUN_ROOT:/magic_root \
-    -v $PDK_ROOT:$PDK_ROOT \
+    -v $PDK_ROOT:$PDK_ROOT -e PDK=$PDK \
     -e PDK_ROOT=$PDK_ROOT -e DESIGN=$DESIGN -e test_dir=$test_dir \
     -e OUT_DIR=$test_dir/drc1 \
     -u $(id -u $USER):$(id -g $USER) \
@@ -40,7 +40,7 @@ docker run -it -v $RUN_ROOT:/magic_root \
         |& tee $OUT_DIR/magic_drc.log"
 
 TEST=$OUT_DIR/magic.drc
-BENCHMARK=$RUN_ROOT/.travisCI/testcases/designs/$DESIGN/benchmark/magic.drc
+BENCHMARK=$RUN_ROOT/.travisCI/testcases/$PDK/designs/$DESIGN/benchmark/magic.drc
 
 
 
